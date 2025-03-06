@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects - My Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Include Chart.js CDN for charts -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <!-- Reuse the navigation bar -->
+  <header>
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="images/project1.png" alt="Project 1">
+          <h3>Project Title 1</h3>
+          <p>Short description of project 1.</p>
+          <a href="https://github.com/your-username/project1" class="btn">View Code</a>
+        </div>
+        <!-- Repeat for additional projects -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Example of embedding a Chart.js chart -->
+  <section id="chart">
+    <div class="container">
+      <h2>Project Statistics</h2>
+      <canvas id="projectChart" width="400" height="200"></canvas>
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const ctx = document.getElementById('projectChart').getContext('2d');
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: ['Project A', 'Project B', 'Project C'],
+          datasets: [{
+            label: 'Completion (%)',
+            data: [80, 95, 70],
+            backgroundColor: [
+              'rgba(0, 122, 204, 0.6)',
+              'rgba(0, 122, 204, 0.6)',
+              'rgba(0, 122, 204, 0.6)'
+            ]
+          }]
+        },
+        options: {
+          responsive: true,
+          scales: {
+            y: {
+              beginAtZero: true,
+              max: 100
+            }
+          }
+        }
+      });
+    });
+  </script>
+  <script src="js/script.js"></script>
+</body>
+</html>
