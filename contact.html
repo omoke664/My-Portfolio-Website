@@ -2,34 +2,161 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact - Wesley Omoke</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+  <!-- Decorative Shapes -->
+  <div class="shape shape-1"></div>
+  <div class="shape shape-2"></div>
+  <div class="shape shape-3"></div>
 
   <!-- Navigation -->
   <header>
     <nav class="navbar">
       <ul class="nav-list">
         <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#certifications">Certifications</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section id="contact">
+  <!-- Contact Hero Section -->
+  <section id="contact-hero">
     <div class="container">
-      <h2>Contact Me</h2>
-      <p>Email: <a href="mailto:ochiengileywes@gmail.com">ochiengileywes@gmail.com</a></p>
-      <p>Phone: +254797340467</p>
-      <p>Location: Nairobi, Kenya</p>
-      <p>GitHub: <a href="https://github.com/your-username" target="_blank">omoke664</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/wesley-omoke-271954231" target="_blank">Wesley Omoke</a></p>
+      <h1>Get In <span>Touch</span></h1>
+      <p>I'm always open to new opportunities and collaborations.</p>
     </div>
   </section>
 
+  <!-- Contact Section -->
+  <section id="contact" class="animate">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <div class="contact-info">
+        <div class="contact-method">
+          <div class="contact-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="contact-type">Email</div>
+          <div class="contact-value">
+            <a href="mailto:ochiengileywes@gmail.com">ochiengileywes@gmail.com</a>
+          </div>
+        </div>
+        
+        <div class="contact-method">
+          <div class="contact-icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <div class="contact-type">Phone</div>
+          <div class="contact-value">
+            <a href="tel:+254797340467">+254 797 340 467</a>
+          </div>
+        </div>
+        
+        <div class="contact-method">
+          <div class="contact-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="contact-type">Location</div>
+          <div class="contact-value">Nairobi, Kenya</div>
+        </div>
+      </div>
+      
+      <div class="social-links">
+        <a href="https://github.com/omoke664" target="_blank" class="social-link">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/wesley-omoke-271954231" target="_blank" class="social-link">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://twitter.com/your-username" target="_blank" class="social-link">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </div>
+      
+      <div class="contact-form-container">
+        <h3>Send Me a Message</h3>
+        <form id="contact-form" class="contact-form">
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" name="subject" placeholder="Subject">
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Custom Cursor -->
+  <div class="custom-cursor"></div>
+
+  <!-- Theme Toggle Button -->
+  <div class="theme-toggle">
+    <i class="fas fa-moon"></i>
+  </div>
+
+  <!-- Back to Top Button -->
+  <div class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
   <script src="js/script.js"></script>
+  <script>
+    // Form submission animation
+    document.addEventListener('DOMContentLoaded', function() {
+      const contactForm = document.getElementById('contact-form');
+      if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          
+          // Simple form validation feedback
+          const formElements = contactForm.elements;
+          let isValid = true;
+          
+          for (let i = 0; i < formElements.length; i++) {
+            if (formElements[i].hasAttribute('required') && !formElements[i].value) {
+              formElements[i].classList.add('error');
+              isValid = false;
+            } else {
+              formElements[i].classList.remove('error');
+            }
+          }
+          
+          if (isValid) {
+            // Add success animation
+            contactForm.classList.add('form-success');
+            
+            // Reset form after animation
+            setTimeout(() => {
+              contactForm.reset();
+              contactForm.classList.remove('form-success');
+              
+              // Show success message
+              alert('Thank you for your message! I will get back to you soon.');
+            }, 1000);
+          }
+        });
+      }
+    });
+  </script>
 </body>
 </html>

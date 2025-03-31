@@ -2,13 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wesley Omoke - Portfolio</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-
-  <!-- Navigation Bar -->
+  <!-- Decorative Shapes -->
+  <div class="shape shape-1"></div>
+  <div class="shape shape-2"></div>
+  <div class="shape shape-3"></div>
+  
+  <!-- Navigation -->
   <header>
     <nav class="navbar">
       <ul class="nav-list">
@@ -24,108 +32,163 @@
   </header>
 
   <!-- Hero Section -->
-  <section id="hero" class="animate-section">
-    <div class="hero-container">
-      <img src="images/Wes.jpg" alt="Wesley Omoke Photo" class="hero-photo">
-      <h1>I'm Wesley Omoke</h1>
-      <p>Final-year BSc Computer Technology at JKUAT | Aspiring Data Scientist & Analyst</p>
-      <div class="cta-buttons">
-        <a href="projects.html" class="btn">View Projects</a>
-        <a href="contact.html" class="btn">Contact Me</a>
-        <a href="Wesley_Omoke_Resume.pdf" class="btn" target="_blank">Download Resume</a>
+  <section id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Hello, I'm <span>Wesley Omoke</span></h1>
+          <p>Final-year BSc Computer Technology student and aspiring Data Scientist passionate about turning data into actionable insights.</p>
+          <div class="cta-buttons">
+            <a href="projects.html" class="btn">View Projects</a>
+            <a href="contact.html" class="btn btn-outline">Contact Me</a>
+            <a href="Wesley_Omoke_Resume.pdf" class="btn btn-outline" download>Download Resume</a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <img src="images/Wes.jpg" alt="Wesley Omoke">
+        </div>
       </div>
     </div>
   </section>
 
   <!-- About Section -->
-  <section id="about" class="animate-section">
+  <section id="about" class="animate">
     <div class="container">
       <h2>About Me</h2>
-      <p>
-        I am a data scientist driven by a passion for transforming data into meaningful solutions.
-        With a solid foundation in Python, SQL, and database management, I leverage my experience as a
-        Loan Officer and ICT professional to tackle complex challenges in data analysis and machine learning.
-      </p>
+      <p>I am a final-year BSc Computer Technology student at Jomo Kenyatta University of Agriculture and Technology. With a passion for data science and analytics, I strive to solve real-world problems using data-driven approaches. My experience spans across data analysis, machine learning, and information technology.</p>
+      <p>My goal is to leverage technology and data to create impactful solutions that drive business growth and innovation. I'm constantly learning and expanding my skill set to stay at the forefront of technological advancements.</p>
     </div>
   </section>
 
   <!-- Skills Section -->
-  <section id="skills" class="animate-section">
+  <section id="skills" class="animate">
     <div class="container">
       <h2>Skills</h2>
-      <div class="skill">
-        <span class="skill-name">Python</span>
-        <div class="skill-bar">
-          <div class="skill-level" style="width: 90%;"></div>
+      <div class="skills-container">
+        <div class="skill-card" data-skill="90">
+          <div class="skill-icon"><i class="fab fa-python"></i></div>
+          <div class="skill-name">Python</div>
+          <p>Proficient in data analysis, web development, and automation using Python.</p>
+          <div class="skill-level">
+            <div class="skill-progress" style="width: 0%"></div>
+          </div>
         </div>
-      </div>
-      <div class="skill">
-        <span class="skill-name">Excel</span>
-        <div class="skill-bar">
-          <div class="skill-level" style="width: 80%;"></div>
+        
+        <div class="skill-card" data-skill="85">
+          <div class="skill-icon"><i class="fas fa-table"></i></div>
+          <div class="skill-name">Excel</div>
+          <p>Advanced data analysis, visualization, and modeling in Excel.</p>
+          <div class="skill-level">
+            <div class="skill-progress" style="width: 0%"></div>
+          </div>
         </div>
-      </div>
-      <div class="skill">
-        <span class="skill-name">SQL / Database Management</span>
-        <div class="skill-bar">
-          <div class="skill-level" style="width: 85%;"></div>
+        
+        <div class="skill-card" data-skill="80">
+          <div class="skill-icon"><i class="fas fa-database"></i></div>
+          <div class="skill-name">SQL</div>
+          <p>Database design, querying, and data manipulation using SQL.</p>
+          <div class="skill-level">
+            <div class="skill-progress" style="width: 0%"></div>
+          </div>
         </div>
-      </div>
-      <div class="skill">
-        <span class="skill-name">Data Analysis</span>
-        <div class="skill-bar">
-          <div class="skill-level" style="width: 80%;"></div>
+        
+        <div class="skill-card" data-skill="85">
+          <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+          <div class="skill-name">Data Analysis</div>
+          <p>Statistical analysis, data cleaning, and insightful visualization.</p>
+          <div class="skill-level">
+            <div class="skill-progress" style="width: 0%"></div>
+          </div>
         </div>
-      </div>
-      <div class="skill">
-        <span class="skill-name">Machine Learning</span>
-        <div class="skill-bar">
-          <div class="skill-level" style="width: 80%;"></div>
+        
+        <div class="skill-card" data-skill="75">
+          <div class="skill-icon"><i class="fas fa-brain"></i></div>
+          <div class="skill-name">Machine Learning</div>
+          <p>Building predictive models and implementing ML algorithms.</p>
+          <div class="skill-level">
+            <div class="skill-progress" style="width: 0%"></div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Experience Section -->
-  <section id="experience" class="animate-section">
+  <section id="experience" class="animate">
     <div class="container">
       <h2>Experience</h2>
-      <div class="experience-item">
-        <h3>ICT Intern</h3>
-        <p><strong>Warehouse Receipt System Council</strong></p>
-        <p>
-          Developed procurement guidelines, conducted maintenance research, and provided technical support.
-        </p>
-        <p><em>May 2024 - Aug 2024</em></p>
+      <div class="experience-timeline">
+        <div class="experience-item">
+          <div class="experience-date">May 2022 - August 2022</div>
+          <div class="experience-role">ICT Intern</div>
+          <div class="experience-company">TARDA</div>
+          <ul>
+            <li>Maintained and configured computer systems and networks</li>
+            <li>Provided technical support and troubleshooting for 50+ users</li>
+            <li>Developed and maintained database systems</li>
+            <li>Performed data analysis and reporting</li>
+          </ul>
+        </div>
+        
+        <div class="experience-item">
+          <div class="experience-date">January 2020 - December 2021</div>
+          <div class="experience-role">Loan Officer</div>
+          <div class="experience-company">BIMAS Kenya</div>
+          <ul>
+            <li>Evaluated and processed loan applications</li>
+            <li>Analyzed financial data to determine creditworthiness</li>
+            <li>Maintained accurate records of loan transactions</li>
+            <li>Generated reports on loan performance and client portfolios</li>
+          </ul>
+        </div>
       </div>
-      <div class="experience-item">
-        <h3>Loan Officer</h3>
-        <p><strong>ICT Intern, Mboleko Limited</strong></p>
-        <p>
-          Managed data using analytics, SQL, and Excel; contributed to the recovery of over 2 million in defaulted loans and helped achieve a 10% annual profit turnover.
-        </p>
-        <p><em>Nov 2022 - Mar 2023</em></p>
-      </div>
-    
     </div>
   </section>
 
   <!-- Certifications Section -->
-  <section id="certifications" class="animate-section">
+  <section id="certifications" class="animate">
     <div class="container">
       <h2>Certifications</h2>
-      <ul class="cert-list">
-        <li>Applied Data Science - WorldQuant University</li>
-        <li>Machine Learning Fundamentals - Alteryx</li>
-        <li>Introduction to Data and Data Science - 365 Data Science</li>
-        <li>Introduction to Data Science - Cisco</li>
-        <li>Data Fundamentals - IBM</li>
-        <li>IBM zXplore - IBM</li>
-        <li>Java Intermediate - Sololearn</li>
-        <li>SQL - Sololearn</li>
-      </ul>
+      <div class="skills-container">
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-certificate"></i></div>
+          <div class="skill-name">IBM Data Science Professional</div>
+          <p>Comprehensive data science certification covering Python, SQL, data analysis, and machine learning.</p>
+        </div>
+        
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-certificate"></i></div>
+          <div class="skill-name">Google Data Analytics</div>
+          <p>Advanced analytics techniques using spreadsheets, SQL, Tableau, and R.</p>
+        </div>
+        
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-certificate"></i></div>
+          <div class="skill-name">Python for Data Science</div>
+          <p>Data manipulation and analysis using Python libraries like Pandas, NumPy, and Matplotlib.</p>
+        </div>
+        
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-certificate"></i></div>
+          <div class="skill-name">SQL for Data Analysis</div>
+          <p>Advanced SQL querying for data analysis and business intelligence.</p>
+        </div>
+      </div>
     </div>
   </section>
+
+  <!-- Custom Cursor -->
+  <div class="custom-cursor"></div>
+
+  <!-- Theme Toggle Button -->
+  <div class="theme-toggle">
+    <i class="fas fa-moon"></i>
+  </div>
+
+  <!-- Back to Top Button -->
+  <div class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </div>
 
   <script src="js/script.js"></script>
 </body>

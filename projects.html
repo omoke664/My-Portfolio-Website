@@ -2,75 +2,195 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Projects - My Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Wesley Omoke</title>
   <link rel="stylesheet" href="css/style.css">
-  <!-- Include Chart.js CDN for charts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Include Chart.js for interactive charts -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
+  <!-- Decorative Shapes -->
+  <div class="shape shape-1"></div>
+  <div class="shape shape-2"></div>
+  <div class="shape shape-3"></div>
 
-  <!-- Reuse the navigation bar -->
+  <!-- Navigation -->
   <header>
     <nav class="navbar">
       <ul class="nav-list">
         <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#certifications">Certifications</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section id="projects">
+  <!-- Projects Hero Section -->
+  <section id="projects-hero">
     <div class="container">
-      <h2>Projects</h2>
+      <h1>My <span>Projects</span></h1>
+      <p>Explore my data science and technology projects that demonstrate my skills and passion.</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="animate">
+    <div class="container">
+      <h2>Featured Projects</h2>
       <div class="project-grid">
         <div class="project-card">
-          <img src="images/project1.png" alt="Project 1">
-          <h3>Project Title 1</h3>
-          <p>Short description of project 1.</p>
-          <a href="https://github.com/your-username/project1" class="btn">View Code</a>
+          <img src="https://via.placeholder.com/600x400?text=Data+Analysis+Project" alt="Data Analysis Project">
+          <div class="project-content">
+            <h3 class="project-title">Customer Segmentation Analysis</h3>
+            <p class="project-description">Used clustering algorithms to segment customers based on purchasing behavior, helping to optimize marketing strategies.</p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Scikit-learn</span>
+              <span>Pandas</span>
+              <span>Matplotlib</span>
+            </div>
+            <a href="#" class="btn">View Project</a>
+          </div>
         </div>
-        <!-- Repeat for additional projects -->
+        
+        <div class="project-card">
+          <img src="https://via.placeholder.com/600x400?text=Machine+Learning+Project" alt="Machine Learning Project">
+          <div class="project-content">
+            <h3 class="project-title">Loan Default Prediction</h3>
+            <p class="project-description">Developed a machine learning model to predict loan defaults with 85% accuracy, helping financial institutions reduce risk.</p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>XGBoost</span>
+              <span>SQL</span>
+              <span>Feature Engineering</span>
+            </div>
+            <a href="#" class="btn">View Project</a>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <img src="https://via.placeholder.com/600x400?text=Data+Visualization+Project" alt="Data Visualization Project">
+          <div class="project-content">
+            <h3 class="project-title">Sales Dashboard</h3>
+            <p class="project-description">Created an interactive dashboard to visualize sales performance across different regions and product categories.</p>
+            <div class="project-tech">
+              <span>Tableau</span>
+              <span>SQL</span>
+              <span>Excel</span>
+              <span>Data Cleaning</span>
+            </div>
+            <a href="#" class="btn">View Project</a>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <img src="https://via.placeholder.com/600x400?text=Web+App+Project" alt="Web App Project">
+          <div class="project-content">
+            <h3 class="project-title">Stock Market Analyzer</h3>
+            <p class="project-description">Built a web application that analyzes stock market trends and provides investment recommendations based on historical data.</p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Flask</span>
+              <span>JavaScript</span>
+              <span>API Integration</span>
+            </div>
+            <a href="#" class="btn">View Project</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Example of embedding a Chart.js chart -->
-  <section id="chart">
+  <!-- Project Statistics Section -->
+  <section id="project-stats" class="animate">
     <div class="container">
       <h2>Project Statistics</h2>
-      <canvas id="projectChart" width="400" height="200"></canvas>
+      <div class="chart-container">
+        <canvas id="skillsChart" width="400" height="200"></canvas>
+      </div>
     </div>
   </section>
 
+  <!-- Custom Cursor -->
+  <div class="custom-cursor"></div>
+
+  <!-- Theme Toggle Button -->
+  <div class="theme-toggle">
+    <i class="fas fa-moon"></i>
+  </div>
+
+  <!-- Back to Top Button -->
+  <div class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
   <script>
+    // Chart.js implementation
     document.addEventListener('DOMContentLoaded', function() {
-      const ctx = document.getElementById('projectChart').getContext('2d');
-      new Chart(ctx, {
-        type: 'bar',
+      const ctx = document.getElementById('skillsChart').getContext('2d');
+      
+      // Create gradient for chart
+      const gradient = ctx.createLinearGradient(0, 0, 0, 400);
+      gradient.addColorStop(0, 'rgba(30, 144, 255, 0.8)');
+      gradient.addColorStop(1, 'rgba(30, 144, 255, 0.2)');
+      
+      const chart = new Chart(ctx, {
+        type: 'radar',
         data: {
-          labels: ['Project A', 'Project B', 'Project C'],
+          labels: ['Python', 'Data Analysis', 'Machine Learning', 'SQL', 'Data Visualization', 'Statistical Analysis'],
           datasets: [{
-            label: 'Completion (%)',
-            data: [80, 95, 70],
-            backgroundColor: [
-              'rgba(0, 122, 204, 0.6)',
-              'rgba(0, 122, 204, 0.6)',
-              'rgba(0, 122, 204, 0.6)'
-            ]
+            label: 'Skill Proficiency',
+            data: [90, 85, 75, 80, 85, 70],
+            backgroundColor: 'rgba(30, 144, 255, 0.2)',
+            borderColor: 'rgba(30, 144, 255, 1)',
+            borderWidth: 2,
+            pointBackgroundColor: 'rgba(30, 144, 255, 1)',
+            pointBorderColor: '#fff',
+            pointHoverBackgroundColor: '#fff',
+            pointHoverBorderColor: 'rgba(30, 144, 255, 1)'
           }]
         },
         options: {
-          responsive: true,
           scales: {
-            y: {
-              beginAtZero: true,
-              max: 100
+            r: {
+              angleLines: {
+                display: true
+              },
+              suggestedMin: 0,
+              suggestedMax: 100
+            }
+          },
+          plugins: {
+            legend: {
+              position: 'top',
+            },
+            title: {
+              display: true,
+              text: 'Skills Used in Projects'
             }
           }
         }
       });
+      
+      // Animation for chart
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            chart.update();
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.5 });
+      
+      observer.observe(document.getElementById('project-stats'));
     });
   </script>
   <script src="js/script.js"></script>
