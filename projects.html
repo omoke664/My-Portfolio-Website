@@ -42,67 +42,81 @@
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="animate">
+  <section class="projects">
     <div class="container">
-      <h2>Featured Projects</h2>
-      <div class="project-grid">
-        <div class="project-card">
-          <img src="https://via.placeholder.com/600x400?text=Data+Analysis+Project" alt="Data Analysis Project">
-          <div class="project-content">
-            <h3 class="project-title">Customer Segmentation Analysis</h3>
-            <p class="project-description">Used clustering algorithms to segment customers based on purchasing behavior, helping to optimize marketing strategies.</p>
-            <div class="project-tech">
-              <span>Python</span>
-              <span>Scikit-learn</span>
-              <span>Pandas</span>
-              <span>Matplotlib</span>
-            </div>
-            <a href="#" class="btn">View Project</a>
+      <h2 class="section-title">My Projects</h2>
+      <p class="section-subtitle">Explore my work across different domains of data science</p>
+      
+      <!-- Project Categories -->
+      <div class="project-categories">
+        <!-- Excel Projects Category -->
+        <div class="category-card" data-category="excel">
+          <div class="category-icon">
+            <i class="fas fa-file-excel"></i>
+          </div>
+          <h3>Excel Projects</h3>
+          <p>Projects showcasing data analysis, visualization, and automation using Microsoft Excel</p>
+          <div class="project-count">3 Projects</div>
+        </div>
+
+        <!-- SQL Projects Category -->
+        <div class="category-card" data-category="sql">
+          <div class="category-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <h3>SQL Projects</h3>
+          <p>Database management and querying projects using SQL</p>
+          <div class="project-count">2 Projects</div>
+        </div>
+
+        <!-- Python Data Analysis Category -->
+        <div class="category-card" data-category="python">
+          <div class="category-icon">
+            <i class="fab fa-python"></i>
+          </div>
+          <h3>Python Data Analysis</h3>
+          <p>Data analysis projects using Python libraries (Pandas, NumPy, etc.)</p>
+          <div class="project-count">4 Projects</div>
+        </div>
+
+        <!-- Machine Learning Category -->
+        <div class="category-card" data-category="ml">
+          <div class="category-icon">
+            <i class="fas fa-brain"></i>
+          </div>
+          <h3>Machine Learning</h3>
+          <p>Predictive modeling and machine learning projects</p>
+          <div class="project-count">3 Projects</div>
+        </div>
+      </div>
+
+      <!-- Project Containers -->
+      <div class="project-containers">
+        <!-- Excel Projects Container -->
+        <div class="project-container" id="excel-projects">
+          <div class="project-grid">
+            <!-- Project cards will be dynamically added here -->
           </div>
         </div>
-        
-        <div class="project-card">
-          <img src="https://via.placeholder.com/600x400?text=Machine+Learning+Project" alt="Machine Learning Project">
-          <div class="project-content">
-            <h3 class="project-title">Loan Default Prediction</h3>
-            <p class="project-description">Developed a machine learning model to predict loan defaults with 85% accuracy, helping financial institutions reduce risk.</p>
-            <div class="project-tech">
-              <span>Python</span>
-              <span>XGBoost</span>
-              <span>SQL</span>
-              <span>Feature Engineering</span>
-            </div>
-            <a href="#" class="btn">View Project</a>
+
+        <!-- SQL Projects Container -->
+        <div class="project-container" id="sql-projects">
+          <div class="project-grid">
+            <!-- Project cards will be dynamically added here -->
           </div>
         </div>
-        
-        <div class="project-card">
-          <img src="https://via.placeholder.com/600x400?text=Data+Visualization+Project" alt="Data Visualization Project">
-          <div class="project-content">
-            <h3 class="project-title">Sales Dashboard</h3>
-            <p class="project-description">Created an interactive dashboard to visualize sales performance across different regions and product categories.</p>
-            <div class="project-tech">
-              <span>Tableau</span>
-              <span>SQL</span>
-              <span>Excel</span>
-              <span>Data Cleaning</span>
-            </div>
-            <a href="#" class="btn">View Project</a>
+
+        <!-- Python Projects Container -->
+        <div class="project-container" id="python-projects">
+          <div class="project-grid">
+            <!-- Project cards will be dynamically added here -->
           </div>
         </div>
-        
-        <div class="project-card">
-          <img src="https://via.placeholder.com/600x400?text=Web+App+Project" alt="Web App Project">
-          <div class="project-content">
-            <h3 class="project-title">Stock Market Analyzer</h3>
-            <p class="project-description">Built a web application that analyzes stock market trends and provides investment recommendations based on historical data.</p>
-            <div class="project-tech">
-              <span>Python</span>
-              <span>Flask</span>
-              <span>JavaScript</span>
-              <span>API Integration</span>
-            </div>
-            <a href="#" class="btn">View Project</a>
+
+        <!-- Machine Learning Projects Container -->
+        <div class="project-container" id="ml-projects">
+          <div class="project-grid">
+            <!-- Project cards will be dynamically added here -->
           </div>
         </div>
       </div>

@@ -214,5 +214,123 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 100);
       }
     }
+
+    // Project Categories Functionality
+    const categoryCards = document.querySelectorAll('.category-card');
+    const projectContainers = document.querySelectorAll('.project-container');
+    let activeCategory = null;
+
+    // Sample project data - replace with your actual projects
+    const projects = {
+        excel: [
+            {
+                title: "Sales Performance Dashboard",
+                description: "Created an interactive Excel dashboard to track and analyze sales performance across different regions.",
+                image: "https://via.placeholder.com/600x400?text=Excel+Dashboard",
+                technologies: ["Excel", "Pivot Tables", "Charts", "VBA"]
+            },
+            {
+                title: "Financial Analysis Model",
+                description: "Developed a comprehensive financial model for investment analysis and forecasting.",
+                image: "https://via.placeholder.com/600x400?text=Financial+Model",
+                technologies: ["Excel", "Financial Modeling", "Data Analysis"]
+            }
+        ],
+        sql: [
+            {
+                title: "Customer Database Management",
+                description: "Designed and implemented a SQL database system for customer relationship management.",
+                image: "https://via.placeholder.com/600x400?text=SQL+Database",
+                technologies: ["SQL", "Database Design", "Query Optimization"]
+            }
+        ],
+        python: [
+            {
+                title: "Market Research Analysis",
+                description: "Conducted comprehensive market research using Python data analysis tools.",
+                image: "https://via.placeholder.com/600x400?text=Python+Analysis",
+                technologies: ["Python", "Pandas", "NumPy", "Matplotlib"]
+            },
+            {
+                title: "Data Visualization Project",
+                description: "Created interactive data visualizations for business intelligence.",
+                image: "https://via.placeholder.com/600x400?text=Data+Viz",
+                technologies: ["Python", "Plotly", "Seaborn", "Data Analysis"]
+            }
+        ],
+        ml: [
+            {
+                title: "Customer Churn Prediction",
+                description: "Built a machine learning model to predict customer churn with 85% accuracy.",
+                image: "https://via.placeholder.com/600x400?text=ML+Model",
+                technologies: ["Python", "Scikit-learn", "XGBoost", "Feature Engineering"]
+            },
+            {
+                title: "Sales Forecasting",
+                description: "Developed a time series forecasting model for sales prediction.",
+                image: "https://via.placeholder.com/600x400?text=Forecasting",
+                technologies: ["Python", "TensorFlow", "Time Series", "Deep Learning"]
+            }
+        ]
+    };
+
+    // Function to create project card HTML
+    function createProjectCard(project) {
+        return `
+            <div class="project-card">
+                <img src="${project.image}" alt="${project.title}">
+                <div class="project-content">
+                    <h3 class="project-title">${project.title}</h3>
+                    <p class="project-description">${project.description}</p>
+                    <div class="project-tech">
+                        ${project.technologies.map(tech => `<span>${tech}</span>`).join('')}
+                    </div>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+        `;
+    }
+
+    // Function to display projects for a category
+    function displayProjects(category) {
+        const container = document.getElementById(`${category}-projects`);
+        const projectGrid = container.querySelector('.project-grid');
+        projectGrid.innerHTML = projects[category].map(createProjectCard).join('');
+    }
+
+    // Handle category card clicks
+    categoryCards.forEach(card => {
+        card.addEventListener('click', function() {
+            const category = this.dataset.category;
+            
+            // Remove active class from all cards
+            categoryCards.forEach(c => c.classList.remove('active'));
+            
+            // Add active class to clicked card
+            this.classList.add('active');
+            
+            // Hide all project containers
+            projectContainers.forEach(container => {
+                container.classList.remove('active');
+            });
+            
+            // Show selected category's projects
+            const selectedContainer = document.getElementById(`${category}-projects`);
+            selectedContainer.classList.add('active');
+            
+            // Display projects if not already displayed
+            if (!selectedContainer.querySelector('.project-card')) {
+                displayProjects(category);
+            }
+            
+            // Update active category
+            activeCategory = category;
+        });
+    });
+
+    // Initialize first category
+    if (categoryCards.length > 0) {
+        categoryCards[0].click();
+    }
   });
   

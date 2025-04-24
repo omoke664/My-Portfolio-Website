@@ -121,6 +121,65 @@ This is my personal portfolio website built with HTML, CSS, and JavaScript and h
 - Create engagement-tracking animations
 - Implement form validation with helpful animated guidance
 
+## Project Categorization Plan
+
+The projects section will be organized into four main categories, each representing a different aspect of data science and analytics. Initially, visitors will see only the category descriptions and must click on a category to view its associated projects.
+
+1. **Excel Projects**
+   - Icon: Excel spreadsheet icon
+   - Description: Projects showcasing data analysis, visualization, and automation using Microsoft Excel
+   - Projects will be revealed upon clicking this section
+   - Example projects:
+     - Sales Performance Dashboard
+     - Financial Analysis Models
+     - Data Cleaning and Transformation
+
+2. **SQL Projects**
+   - Icon: Database icon
+   - Description: Database management and querying projects using SQL
+   - Projects will be revealed upon clicking this section
+   - Example projects:
+     - Customer Database Management
+     - Sales Data Analysis
+     - Database Optimization
+
+3. **Python Data Analysis**
+   - Icon: Python logo
+   - Description: Data analysis projects using Python libraries (Pandas, NumPy, etc.)
+   - Projects will be revealed upon clicking this section
+   - Example projects:
+     - Market Research Analysis
+     - Customer Behavior Analysis
+     - Data Visualization Projects
+
+4. **Machine Learning**
+   - Icon: Neural network icon
+   - Description: Predictive modeling and machine learning projects
+   - Projects will be revealed upon clicking this section
+   - Example projects:
+     - Customer Churn Prediction
+     - Sales Forecasting
+     - Image Classification
+
+Each category will be displayed as an interactive card with:
+- A representative icon
+- Category title
+- Brief description
+- Number of projects in that category (shown as a subtle indicator)
+- Click/tap to reveal projects
+
+The cards will be arranged in a responsive grid layout with:
+- Hover effects to indicate interactivity
+- Smooth transitions when expanding to show projects
+- Clear visual feedback when selected
+- Ability to collapse back to category view
+
+When a category is clicked:
+- The card expands to reveal all projects in that category
+- Other categories remain visible but are dimmed
+- Projects are displayed in a grid layout within the expanded section
+- Each project maintains its detailed view with description, technologies used, and links
+
 ## Implementation Timeline
 1. Phase 1: Basic Animations and Transitions (Week 1)
 2. Phase 2: Interactive Elements and Sliders (Week 2)
