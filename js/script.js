@@ -332,5 +332,62 @@ document.addEventListener('DOMContentLoaded', function() {
     if (categoryCards.length > 0) {
         categoryCards[0].click();
     }
-  });
+
+    // Mobile Menu Functionality
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const mobileMenuClose = document.querySelector('.mobile-menu-close');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+
+    // Toggle mobile menu
+    mobileMenuToggle.addEventListener('click', function() {
+        mobileMenu.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    });
+
+    // Close mobile menu
+    mobileMenuClose.addEventListener('click', function() {
+        mobileMenu.classList.remove('active');
+        document.body.style.overflow = '';
+    });
+
+    // Close mobile menu when clicking on a link
+    mobileMenuLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            mobileMenu.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+    });
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', function(event) {
+        if (mobileMenu.classList.contains('active') && 
+            !mobileMenu.contains(event.target) && 
+            !mobileMenuToggle.contains(event.target)) {
+            mobileMenu.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
+
+    // Handle touch events for mobile menu
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    mobileMenu.addEventListener('touchstart', function(e) {
+        touchStartX = e.changedTouches[0].screenX;
+    }, false);
+
+    mobileMenu.addEventListener('touchend', function(e) {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+    }, false);
+
+    function handleSwipe() {
+        if (touchStartX - touchEndX > 50) {
+            // Swipe left - close menu
+            mobileMenu.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    }
+});
   
