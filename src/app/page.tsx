@@ -124,8 +124,8 @@ export default function Home() {
               <div className="relative">
                 <div className="w-64 h-64 md:w-72 md:h-72 mx-auto rounded-full overflow-hidden border-4 border-[#4CAF50] shadow-xl">
                   <Image
-                    src="/images/Wes.jpg"
-                    alt="Wesley Omoke"
+                    src="/My-Portfolio-Website/images/Wes.jpg"
+                    alt="Wes"
                     width={288}
                     height={288}
                     className="object-cover w-full h-full"
@@ -205,77 +205,71 @@ export default function Home() {
             Technical Skills
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {/* Excel */}
-            <div className="group bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1">
-              <div className="flex flex-col items-center text-center">
-                <div className="flex-shrink-0 w-16 h-16 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center mb-4">
-                  <Image
-                    src="/images/bike_sales_sql.png"
-                    alt="Bike Sales Analysis"
-                    width={48}
-                    height={48}
-                    className="w-12 h-12 rounded-lg object-cover"
-                  />
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">Excel</h3>
-                  <p className="text-[#666666]">Data analysis and spreadsheet management</p>
-                </div>
-              </div>
-            </div>
-
-            {/* SQL Card */}
+            {/* SQL */}
             <div className="group bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1">
               <div className="flex flex-col items-center text-center">
-                <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center">
+                <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center mb-4">
                   <Image
-                    src="/svg/sql-svgrepo-com.svg"
+                    src="/My-Portfolio-Website/svg/sql-svgrepo-com.svg"
                     alt="SQL"
                     width={48}
                     height={48}
                     className="w-12 h-12 rounded-lg object-cover"
                   />
                 </div>
-                <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">SQL</h3>
-                <p className="text-[#666666]">Database Management</p>
+                <h3 className="text-lg font-semibold text-[#1B1B1B] mb-2">SQL</h3>
+                <p className="text-[#666666]">Database management and complex query optimization</p>
               </div>
             </div>
 
             {/* Python */}
-            <div className="group bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1">
+            <div className="group bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1">
               <div className="flex flex-col items-center text-center">
-                <div className="flex-shrink-0 w-16 h-16 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center mb-4">
+                <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center mb-4">
                   <Image
-                    src="/svg/python-svgrepo-com.svg"
+                    src="/My-Portfolio-Website/svg/python-svgrepo-com.svg"
                     alt="Python"
                     width={48}
                     height={48}
                     className="w-12 h-12 rounded-lg object-cover"
                   />
                 </div>
-                <div>
-                  <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">Python</h3>
-                  <p className="text-[#666666]">Data analysis and automation</p>
-                </div>
+                <h3 className="text-lg font-semibold text-[#1B1B1B] mb-2">Python</h3>
+                <p className="text-[#666666]">Data analysis, automation, and machine learning</p>
               </div>
             </div>
 
             {/* Tableau */}
-            <div className="group bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1">
+            <div className="group bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1">
               <div className="flex flex-col items-center text-center">
-                <div className="flex-shrink-0 w-16 h-16 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center mb-4">
+                <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center mb-4">
                   <Image
-                    src="/svg/tableau-svgrepo-com (1).svg"
+                    src="/My-Portfolio-Website/svg/tableau-svgrepo-com (1).svg"
                     alt="Tableau"
                     width={48}
                     height={48}
                     className="w-12 h-12 rounded-lg object-cover"
                   />
                 </div>
-                <div>
-                  <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">Tableau</h3>
-                  <p className="text-[#666666]">Data visualization and business intelligence</p>
+                <h3 className="text-lg font-semibold text-[#1B1B1B] mb-2">Tableau</h3>
+                <p className="text-[#666666]">Interactive data visualization and dashboards</p>
+              </div>
+            </div>
+
+            {/* Excel */}
+            <div className="group bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1">
+              <div className="flex flex-col items-center text-center">
+                <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center mb-4">
+                  <Image
+                    src="/My-Portfolio-Website/svg/excel-svgrepo-com.svg"
+                    alt="Excel"
+                    width={48}
+                    height={48}
+                    className="w-12 h-12 rounded-lg object-cover"
+                  />
                 </div>
+                <h3 className="text-lg font-semibold text-[#1B1B1B] mb-2">Excel</h3>
+                <p className="text-[#666666]">Advanced data analysis and financial modeling</p>
               </div>
             </div>
           </div>
@@ -391,8 +385,8 @@ export default function Home() {
                   <div className="group bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-6">
                     <div className="flex-shrink-0 w-16 h-16 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center">
                       <Image
-                        src="/images/jkuat.png"
-                        alt="JKUAT Logo"
+                        src="/My-Portfolio-Website/images/jkuat.png"
+                        alt="JKUAT"
                         width={48}
                         height={48}
                         className="w-12 h-12 rounded-lg object-cover"
@@ -424,8 +418,8 @@ export default function Home() {
                   <div className="group bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-6">
                     <div className="flex-shrink-0 w-16 h-16 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center">
                       <Image
-                        src="/images/worldquant.png"
-                        alt="WorldQuant Logo"
+                        src="/My-Portfolio-Website/images/worldquant.png"
+                        alt="WorldQuant"
                         width={48}
                         height={48}
                         className="w-12 h-12 rounded-lg object-cover"
@@ -456,7 +450,7 @@ export default function Home() {
                   <div className="group bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-6">
                     <div className="flex-shrink-0 w-16 h-16 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center">
                       <Image
-                        src="/svg/google-color-svgrepo-com.svg"
+                        src="/My-Portfolio-Website/svg/google-color-svgrepo-com.svg"
                         alt="Google"
                         width={48}
                         height={48}
@@ -499,7 +493,7 @@ export default function Home() {
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center">
                   <Image
-                    src="/images/worldquant.png"
+                    src="/My-Portfolio-Website/images/worldquant.png"
                     alt="WorldQuant Logo"
                     width={48}
                     height={48}
@@ -519,7 +513,7 @@ export default function Home() {
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center">
                   <Image
-                    src="/images/alteryx.jpg"
+                    src="/My-Portfolio-Website/images/alteryx.jpg"
                     alt="Alteryx Logo"
                     width={48}
                     height={48}
@@ -539,7 +533,7 @@ export default function Home() {
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center">
                   <Image
-                    src="/svg/cisco-svgrepo-com.svg"
+                    src="/My-Portfolio-Website/svg/cisco-svgrepo-com.svg"
                     alt="Cisco"
                     width={48}
                     height={48}
@@ -559,7 +553,7 @@ export default function Home() {
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center">
                   <Image
-                    src="/svg/google-color-svgrepo-com.svg"
+                    src="/My-Portfolio-Website/svg/google-color-svgrepo-com.svg"
                     alt="Google"
                     width={48}
                     height={48}
@@ -588,7 +582,7 @@ export default function Home() {
             <a href="https://github.com/omoke664/Bike-Store-Analysis-SQL-" target="_blank" rel="noopener noreferrer" className="group bg-white rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
               <div className="aspect-video bg-gray-100 relative">
                 <Image
-                  src="/images/bike_sales_sql.jpeg"
+                  src="/My-Portfolio-Website/images/bike_sales_sql.jpeg"
                   alt="Bike Store Analysis SQL"
                   width={400}
                   height={225}
@@ -598,7 +592,7 @@ export default function Home() {
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">Bike Store Analysis</h3>
                 <p className="text-[#666666] mb-4">Comprehensive SQL analysis of bike sales data, including customer insights, sales performance, and inventory management.</p>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-4 justify-center">
                   <span className="px-3 py-1 bg-[#4CAF50]/10 text-[#4CAF50] rounded-full text-sm">SQL</span>
                   <span className="px-3 py-1 bg-[#4CAF50]/10 text-[#4CAF50] rounded-full text-sm">Data Analysis</span>
                 </div>
@@ -609,7 +603,7 @@ export default function Home() {
             <a href="https://github.com/omoke664/Danny-s-Diner-SQL-Case-Study" target="_blank" rel="noopener noreferrer" className="group bg-white rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
               <div className="aspect-video bg-gray-100 relative">
                 <Image
-                  src="/images/danys_diner.png"
+                  src="/My-Portfolio-Website/images/danys_diner.png"
                   alt="Danny's Diner Case Study"
                   width={400}
                   height={225}
@@ -619,7 +613,7 @@ export default function Home() {
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">Danny&apos;s Diner SQL Case Study</h3>
                 <p className="text-[#666666] mb-4">Interactive case study analyzing customer behavior, menu preferences, and loyalty program impact using SQL.</p>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-4 justify-center">
                   <span className="px-3 py-1 bg-[#4CAF50]/10 text-[#4CAF50] rounded-full text-sm">SQL</span>
                   <span className="px-3 py-1 bg-[#4CAF50]/10 text-[#4CAF50] rounded-full text-sm">Business Analysis</span>
                 </div>
@@ -630,8 +624,8 @@ export default function Home() {
             <a href="https://github.com/omoke664/British-Airways-Data-Analysis" target="_blank" rel="noopener noreferrer" className="group bg-white rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
               <div className="aspect-video bg-gray-100 relative">
                 <Image
-                  src="/images/BritishAirways.jpeg"
-                  alt="British Airways Data Analysis"
+                  src="/My-Portfolio-Website/images/BritishAirways.jpeg"
+                  alt="British Airways Analysis"
                   width={400}
                   height={225}
                   className="object-cover w-full h-full"
@@ -640,7 +634,7 @@ export default function Home() {
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">British Airways Data Analysis</h3>
                 <p className="text-[#666666] mb-4">Comprehensive analysis of customer feedback and booking data to improve service quality and customer satisfaction.</p>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-4 justify-center">
                   <span className="px-3 py-1 bg-[#4CAF50]/10 text-[#4CAF50] rounded-full text-sm">Python</span>
                   <span className="px-3 py-1 bg-[#4CAF50]/10 text-[#4CAF50] rounded-full text-sm">Data Analysis</span>
                 </div>
@@ -651,8 +645,8 @@ export default function Home() {
             <a href="https://github.com/omoke664/E-commerce-Linear-Regression" target="_blank" rel="noopener noreferrer" className="group bg-white rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
               <div className="aspect-video bg-gray-100 relative">
                 <Image
-                  src="/images/E-commeece.jpeg"
-                  alt="E-commerce Linear Regression Analysis"
+                  src="/My-Portfolio-Website/images/E-commeece.jpeg"
+                  alt="E-commerce Analysis"
                   width={400}
                   height={225}
                   className="object-cover w-full h-full"
@@ -661,7 +655,7 @@ export default function Home() {
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">Linear Regression</h3>
                 <p className="text-[#666666] mb-4">Predictive modeling of e-commerce sales using linear regression to forecast future trends and customer behavior.</p>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-4 justify-center">
                   <span className="px-3 py-1 bg-[#4CAF50]/10 text-[#4CAF50] rounded-full text-sm">Python</span>
                   <span className="px-3 py-1 bg-[#4CAF50]/10 text-[#4CAF50] rounded-full text-sm">Machine Learning</span>
                 </div>
@@ -672,7 +666,7 @@ export default function Home() {
             <a href="https://github.com/omoke664/London-Bikes-Analysis" target="_blank" rel="noopener noreferrer" className="group bg-white rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
               <div className="aspect-video bg-gray-100 relative">
                 <Image
-                  src="/images/London.jpg"
+                  src="/My-Portfolio-Website/images/London.jpg"
                   alt="London Bikes Analysis"
                   width={400}
                   height={225}
@@ -682,7 +676,7 @@ export default function Home() {
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">London Bikes</h3>
                 <p className="text-[#666666] mb-4">Analysis of London bike sharing data using Python and Pandas for insights into usage patterns and trends.</p>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-4 justify-center">
                   <span className="px-3 py-1 bg-[#4CAF50]/10 text-[#4CAF50] rounded-full text-sm">Python</span>
                   <span className="px-3 py-1 bg-[#4CAF50]/10 text-[#4CAF50] rounded-full text-sm">Pandas</span>
                 </div>
@@ -693,7 +687,7 @@ export default function Home() {
             <a href="https://github.com/omoke664/Coffee-Consumption-Analysis" target="_blank" rel="noopener noreferrer" className="group bg-white rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
               <div className="aspect-video bg-gray-100 relative">
                 <Image
-                  src="/images/coffee.jpg"
+                  src="/My-Portfolio-Website/images/coffee.jpg"
                   alt="Coffee Consumption Analysis"
                   width={400}
                   height={225}
@@ -703,7 +697,7 @@ export default function Home() {
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">Coffee Consumption</h3>
                 <p className="text-[#666666] mb-4">Analysis of coffee consumption patterns and preferences using Python for data visualization and insights.</p>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-4 justify-center">
                   <span className="px-3 py-1 bg-[#4CAF50]/10 text-[#4CAF50] rounded-full text-sm">Python</span>
                   <span className="px-3 py-1 bg-[#4CAF50]/10 text-[#4CAF50] rounded-full text-sm">Data Visualization</span>
                 </div>
@@ -714,7 +708,7 @@ export default function Home() {
             <a href="#" target="_blank" rel="noopener noreferrer" className="group bg-white rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
               <div className="aspect-video bg-gray-100 relative">
                 <Image
-                  src="/images/psychology.jpeg"
+                  src="/My-Portfolio-Website/images/psychology.jpeg"
                   alt="Psychology Analysis with Python"
                   width={400}
                   height={225}
@@ -724,7 +718,7 @@ export default function Home() {
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">Psychology Analysis</h3>
                 <p className="text-[#666666] mb-4">Data analysis of psychological patterns using Python and Pandas for statistical insights.</p>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-4 justify-center">
                   <span className="px-3 py-1 bg-[#4CAF50]/10 text-[#4CAF50] rounded-full text-sm">Python</span>
                   <span className="px-3 py-1 bg-[#4CAF50]/10 text-[#4CAF50] rounded-full text-sm">Pandas</span>
                 </div>
@@ -747,51 +741,51 @@ export default function Home() {
             {/* Email */}
             <a href="mailto:omokeleywes@gmail.com" className="bg-white rounded-lg shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 p-2 flex justify-center items-center">
               <Image
-                src="/svg/gmail-svgrepo-com.svg"
+                src="/My-Portfolio-Website/svg/gmail-svgrepo-com.svg"
                 alt="Email"
-                width={32}
-                height={32}
-                className="w-8 h-8"
+                width={24}
+                height={24}
+                className="w-6 h-6"
               />
             </a>
             {/* LinkedIn */}
             <a href="https://www.linkedin.com/in/wesley-omoke-271954231/" target="_blank" rel="noopener noreferrer" className="bg-white rounded-lg shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 p-2 flex justify-center items-center">
               <Image
-                src="/svg/linkedin-icon-svgrepo-com.svg"
+                src="/My-Portfolio-Website/svg/linkedin-icon-svgrepo-com.svg"
                 alt="LinkedIn"
-                width={32}
-                height={32}
-                className="w-8 h-8"
+                width={24}
+                height={24}
+                className="w-6 h-6"
               />
             </a>
             {/* GitHub */}
             <a href="https://github.com/omoke664" target="_blank" rel="noopener noreferrer" className="bg-white rounded-lg shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 p-2 flex justify-center items-center">
               <Image
-                src="/svg/github-142-svgrepo-com.svg"
+                src="/My-Portfolio-Website/svg/github-142-svgrepo-com.svg"
                 alt="GitHub"
-                width={32}
-                height={32}
-                className="w-8 h-8"
+                width={24}
+                height={24}
+                className="w-6 h-6"
               />
             </a>
             {/* WhatsApp */}
             <a href="https://wa.me/25797340467" target="_blank" rel="noopener noreferrer" className="bg-white rounded-lg shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 p-2 flex justify-center items-center">
               <Image
-                src="/svg/whatsapp-svgrepo-com.svg"
+                src="/My-Portfolio-Website/svg/whatsapp-svgrepo-com.svg"
                 alt="WhatsApp"
-                width={32}
-                height={32}
-                className="w-8 h-8"
+                width={24}
+                height={24}
+                className="w-6 h-6"
               />
             </a>
             {/* Credly */}
             <a href="https://www.credly.com/users/wesley-omoke.ccffc8e6" target="_blank" rel="noopener noreferrer" className="bg-white rounded-lg shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 p-2 flex justify-center items-center">
               <Image
-                src="/svg/credly-svgrepo-com.svg"
+                src="/My-Portfolio-Website/svg/credly-svgrepo-com.svg"
                 alt="Credly"
-                width={32}
-                height={32}
-                className="w-8 h-8"
+                width={24}
+                height={24}
+                className="w-6 h-6"
               />
             </a>
           </div>
