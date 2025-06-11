@@ -632,7 +632,7 @@ export default function Home() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">British Airways Data Analysis</h3>
+                <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">British Airways Reviews - Tableau</h3>
                 <p className="text-[#666666] mb-4">Comprehensive analysis of customer feedback and booking data to improve service quality and customer satisfaction.</p>
                 <div className="flex flex-wrap gap-4 justify-center">
                   <span className="px-3 py-1 bg-[#4CAF50]/10 text-[#4CAF50] rounded-full text-sm">Python</span>
