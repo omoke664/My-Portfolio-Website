@@ -159,13 +159,13 @@ export default function Home() {
                 <div className="bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-lg transition-all duration-300">
                   <h3 className="text-2xl font-semibold text-[#4CAF50] mb-4">My Journey</h3>
                   <p className="text-[#666666] leading-relaxed">
-                    My journey into data analysis began unexpectedly during my first role as a loan officer. There, I regularly analyzed clients' credit scores, seeing firsthand how raw data could be transformed into powerful insights that directly informed critical financial decisions. Witnessing this real-world impact ignited a passion within me; I knew then that data analytics was the path I was meant to follow.
+                    My journey into data analysis began unexpectedly during my first role as a loan officer. There, I regularly analyzed clients&apos; credit scores, seeing firsthand how raw data could be transformed into powerful insights that directly informed critical financial decisions. Witnessing this real-world impact ignited a passion within me; I knew then that data analytics was the path I was meant to follow.
                   </p>
                 </div>
                 <div className="bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-lg transition-all duration-300">
                   <h3 className="text-2xl font-semibold text-[#4CAF50] mb-4">Skills & Expertise</h3>
                   <p className="text-[#666666] leading-relaxed">
-                    Since that pivotal experience, I've immersed myself in the field through intensive self-directed learning and hands-on projects. As a final-year student at JKUAT, I've cultivated a robust skill set, including Python (with expertise in its core data libraries), SQL, MySQL, and PostgreSQL. I thrive on leveraging data structures and algorithms to extract meaningful patterns and build scalable solutions.
+                    Since that pivotal experience, I&apos;ve immersed myself in the field through intensive self-directed learning and hands-on projects. As a final-year student at JKUAT, I&apos;ve cultivated a robust skill set, including Python (with expertise in its core data libraries), SQL, MySQL, and PostgreSQL. I thrive on leveraging data structures and algorithms to extract meaningful patterns and build scalable solutions.
                   </p>
                 </div>
               </div>
@@ -175,7 +175,7 @@ export default function Home() {
                 <div className="bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-lg transition-all duration-300">
                   <h3 className="text-2xl font-semibold text-[#4CAF50] mb-4">My Approach</h3>
                   <p className="text-[#666666] leading-relaxed">
-                    My analytical mindset, combined with a commitment to continuous learning, drives me to turn complex data into clear, actionable insights. I'm excited about the potential of data to revolutionize industries and am actively seeking an entry-level Data Analyst opportunity to contribute to impactful projects that harness the power of data to create positive change.
+                    My analytical mindset, combined with a commitment to continuous learning, drives me to turn complex data into clear, actionable insights. I&apos;m excited about the potential of data to revolutionize industries and am actively seeking an entry-level Data Analyst opportunity to contribute to impactful projects that harness the power of data to create positive change.
                   </p>
                 </div>
                 <div className="bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-lg transition-all duration-300">
