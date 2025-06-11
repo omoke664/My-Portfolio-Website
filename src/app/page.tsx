@@ -293,23 +293,34 @@ export default function Home() {
               <div className="group relative">
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-[#4CAF50] border-4 border-white shadow-lg"></div>
                 <div className="ml-8 md:ml-0 md:pl-16">
-                  <div className="group bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1">
-                    <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-4">
-                      <div>
-                        <h3 className="text-2xl font-semibold text-[#1B1B1B]">ICT Intern</h3>
-                        <p className="text-[#4CAF50] font-medium">Warehouse Receipt System Council</p>
-                      </div>
-                      <div className="text-[#666666]">
-                        <p>May 2024 - Aug 2024</p>
-                        <p>Nairobi, Kenya</p>
-                      </div>
+                  <div className="group bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1 flex items-start gap-4">
+                    <div className="flex-shrink-0 w-20 h-20 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center">
+                      <Image
+                        src="/My-Portfolio-Website/images/wrsc.png"
+                        alt="WRSC"
+                        width={80}
+                        height={80}
+                        className="w-20 h-20 rounded-lg object-contain"
+                      />
                     </div>
-                    <ul className="list-disc list-inside space-y-2 text-[#666666]">
-                      <li>Demonstrated technical skills and administrative abilities</li>
-                      <li>Carried out maintenance research and prepared reports</li>
-                      <li>Provided timely technical support and resolved queries</li>
-                      <li>Actively participated in project development</li>
-                    </ul>
+                    <div className="flex-grow">
+                      <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-4">
+                        <div>
+                          <h3 className="text-2xl font-semibold text-[#1B1B1B]">ICT Intern</h3>
+                          <p className="text-[#4CAF50] font-medium">Warehouse Receipt System Council</p>
+                        </div>
+                        <div className="text-[#666666] text-right">
+                          <p>May 2024 - Aug 2024</p>
+                          <p>Nairobi, Kenya</p>
+                        </div>
+                      </div>
+                      <ul className="list-disc list-inside space-y-2 text-[#666666]">
+                        <li>Demonstrated technical skills and administrative abilities</li>
+                        <li>Carried out maintenance research and prepared reports</li>
+                        <li>Provided timely technical support and resolved queries</li>
+                        <li>Actively participated in project development</li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -324,7 +335,7 @@ export default function Home() {
                         <h3 className="text-2xl font-semibold text-[#1B1B1B]">Loan Officer</h3>
                         <p className="text-[#4CAF50] font-medium">Mboleko Limited</p>
                       </div>
-                      <div className="text-[#666666]">
+                      <div className="text-[#666666] text-right">
                         <p>Nov 2022 - Mar 2023</p>
                         <p>Nairobi, Kenya</p>
                       </div>
@@ -342,21 +353,32 @@ export default function Home() {
               <div className="group relative">
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-[#4CAF50] border-4 border-white shadow-lg"></div>
                 <div className="ml-8 md:ml-0 md:pl-16">
-                  <div className="group bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1">
-                    <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-4">
-                      <div>
-                        <h3 className="text-2xl font-semibold text-[#1B1B1B]">Volunteer Researcher</h3>
-                        <p className="text-[#4CAF50] font-medium">Fintech Frontiers</p>
-                      </div>
-                      <div className="text-[#666666]">
-                        <p>Jun 2022 - Aug 2022</p>
-                        <p>Nairobi, Kenya</p>
-                      </div>
+                  <div className="group bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1 flex items-start gap-4">
+                    <div className="flex-shrink-0 w-20 h-20 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center">
+                      <Image
+                        src="/My-Portfolio-Website/images/fintech.png"
+                        alt="Fintech Frontiers"
+                        width={80}
+                        height={80}
+                        className="w-20 h-20 rounded-lg object-contain"
+                      />
                     </div>
-                    <ul className="list-disc list-inside space-y-2 text-[#666666]">
-                      <li>Collected data and participated in its analysis</li>
-                      <li>Supported Fintech Frontiers&apos; initiatives</li>
-                    </ul>
+                    <div className="flex-grow">
+                      <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-4">
+                        <div>
+                          <h3 className="text-2xl font-semibold text-[#1B1B1B]">Volunteer Researcher</h3>
+                          <p className="text-[#4CAF50] font-medium">Fintech Frontiers</p>
+                        </div>
+                        <div className="text-[#666666] text-right">
+                          <p>Jun 2022 - Aug 2022</p>
+                          <p>Nairobi, Kenya</p>
+                        </div>
+                      </div>
+                      <ul className="list-disc list-inside space-y-2 text-[#666666]">
+                        <li>Collected data and participated in its analysis</li>
+                        <li>Supported Fintech Frontiers&apos; initiatives</li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -382,30 +404,19 @@ export default function Home() {
               <div className="group relative">
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-[#4CAF50] border-4 border-white shadow-lg"></div>
                 <div className="ml-8 md:ml-0 md:pl-16">
-                  <div className="group bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-6">
-                    <div className="flex-shrink-0 w-16 h-16 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center">
-                      <Image
-                        src="/My-Portfolio-Website/images/jkuat.png"
-                        alt="JKUAT"
-                        width={48}
-                        height={48}
-                        className="w-12 h-12 rounded-lg object-cover"
-                      />
+                  <div className="group bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1">
+                    <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-4">
+                      <div>
+                        <h3 className="text-2xl font-semibold text-[#1B1B1B]">BSc Computer Technology</h3>
+                        <p className="text-[#4CAF50] font-medium">Jomo Kenyatta University of Agriculture and Technology</p>
+                      </div>
+                      <div className="text-[#666666] text-right">
+                        <p>2021 - 2025</p>
+                        <p>Nairobi, Kenya</p>
+                      </div>
                     </div>
-                    <div>
-                      <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-4">
-                        <div>
-                          <h3 className="text-2xl font-semibold text-[#1B1B1B]">BSc Computer Technology</h3>
-                          <p className="text-[#4CAF50] font-medium">Jomo Kenyatta University of Agriculture and Technology</p>
-                        </div>
-                        <div className="text-[#666666]">
-                          <p>2021 - 2025</p>
-                          <p>Nairobi, Kenya</p>
-                        </div>
-                      </div>
-                      <div className="text-[#666666]">
-                        <p>Bachelor&apos;s Degree in Computer Technology</p>
-                      </div>
+                    <div className="text-[#666666]">
+                      <p>Bachelor&apos;s Degree in Computer Technology</p>
                     </div>
                   </div>
                 </div>
@@ -415,29 +426,18 @@ export default function Home() {
               <div className="group relative">
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-[#4CAF50] border-4 border-white shadow-lg"></div>
                 <div className="ml-8 md:ml-0 md:pl-16">
-                  <div className="group bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-6">
-                    <div className="flex-shrink-0 w-16 h-16 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center">
-                      <Image
-                        src="/My-Portfolio-Website/images/worldquant.png"
-                        alt="WorldQuant"
-                        width={48}
-                        height={48}
-                        className="w-12 h-12 rounded-lg object-cover"
-                      />
+                  <div className="group bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1">
+                    <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-4">
+                      <div>
+                        <h3 className="text-2xl font-semibold text-[#1B1B1B]">Applied Data Science</h3>
+                        <p className="text-[#4CAF50] font-medium">WorldQuant University</p>
+                      </div>
+                      <div className="text-[#666666] text-right">
+                        <p>August 2024 - September 2024</p>
+                      </div>
                     </div>
-                    <div>
-                      <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-4">
-                        <div>
-                          <h3 className="text-2xl font-semibold text-[#1B1B1B]">Applied Data Science</h3>
-                          <p className="text-[#4CAF50] font-medium">WorldQuant University</p>
-                        </div>
-                        <div className="text-[#666666]">
-                          <p>August 2024 - September 2024</p>
-                        </div>
-                      </div>
-                      <div className="text-[#666666]">
-                        <p>Professional Certificate in Applied Data Science</p>
-                      </div>
+                    <div className="text-[#666666]">
+                      <p>Professional Certificate in Applied Data Science</p>
                     </div>
                   </div>
                 </div>
@@ -447,29 +447,18 @@ export default function Home() {
               <div className="group relative">
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-[#4CAF50] border-4 border-white shadow-lg"></div>
                 <div className="ml-8 md:ml-0 md:pl-16">
-                  <div className="group bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-6">
-                    <div className="flex-shrink-0 w-16 h-16 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center">
-                      <Image
-                        src="/My-Portfolio-Website/svg/google-color-svgrepo-com.svg"
-                        alt="Google"
-                        width={48}
-                        height={48}
-                        className="w-12 h-12 rounded-lg object-cover"
-                      />
+                  <div className="group bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1">
+                    <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-4">
+                      <div>
+                        <h3 className="text-2xl font-semibold text-[#1B1B1B]">Google Data Analytics</h3>
+                        <p className="text-[#4CAF50] font-medium">Google - Coursera</p>
+                      </div>
+                      <div className="text-[#666666] text-right">
+                        <p>September 2024 - November 2024</p>
+                      </div>
                     </div>
-                    <div>
-                      <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-4">
-                        <div>
-                          <h3 className="text-2xl font-semibold text-[#1B1B1B]">Google Data Analytics</h3>
-                          <p className="text-[#4CAF50] font-medium">Google - Coursera</p>
-                        </div>
-                        <div className="text-[#666666]">
-                          <p>September 2024 - November 2024</p>
-                        </div>
-                      </div>
-                      <div className="text-[#666666]">
-                        <p>Professional Certificate in Data Analytics</p>
-                      </div>
+                    <div className="text-[#666666]">
+                      <p>Professional Certificate in Data Analytics</p>
                     </div>
                   </div>
                 </div>
