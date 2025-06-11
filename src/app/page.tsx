@@ -590,7 +590,7 @@ export default function Home() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">Bike Store Analysis</h3>
+                <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">Bike Store Analysis using SQL</h3>
                 <p className="text-[#666666] mb-4">Comprehensive SQL analysis of bike sales data, including customer insights, sales performance, and inventory management.</p>
                 <div className="flex flex-wrap gap-4 justify-center">
                   <span className="px-3 py-1 bg-[#4CAF50]/10 text-[#4CAF50] rounded-full text-sm">SQL</span>
