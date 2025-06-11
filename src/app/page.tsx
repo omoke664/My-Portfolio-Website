@@ -227,11 +227,14 @@ export default function Home() {
             {/* SQL Card */}
             <div className="group bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1">
               <div className="flex flex-col items-center text-center">
-                <div className="relative">
-                  <div className="absolute inset-0 bg-gradient-to-br from-[#336791] to-[#1B4B6F] rounded-full blur-lg opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
-                  <svg className="w-12 h-12 text-[#336791] mb-4 relative" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                    <path fill="currentColor" d="M448 80l0 48c0 44.2-100.3 80-224 80S0 172.2 0 128L0 80C0 35.8 100.3 0 224 0S448 35.8 448 80zM393.2 214.7c20.8-7.4 39.9-16.9 54.8-28.6L448 288c0 44.2-100.3 80-224 80S0 332.2 0 288L0 186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3zM0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6l0 85.9c0 44.2-100.3 80-224 80S0 476.2 0 432l0-85.9z"/>
-                  </svg>
+                <div className="flex-shrink-0 w-16 h-16 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center mb-4">
+                  <Image
+                    src="/images/sql-icon.png"
+                    alt="SQL"
+                    width={48}
+                    height={48}
+                    className="w-12 h-12 rounded-lg object-cover"
+                  />
                 </div>
                 <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">SQL</h3>
                 <p className="text-[#666666]">Database Management</p>
@@ -243,7 +246,7 @@ export default function Home() {
               <div className="flex flex-col items-center text-center">
                 <div className="flex-shrink-0 w-16 h-16 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center mb-4">
                   <Image
-                    src="/images/python-svgrepo-com.svg"
+                    src="/svg/python-svgrepo-com.svg"
                     alt="Python"
                     width={48}
                     height={48}
@@ -262,7 +265,7 @@ export default function Home() {
               <div className="flex flex-col items-center text-center">
                 <div className="flex-shrink-0 w-16 h-16 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center mb-4">
                   <Image
-                    src="/images/tableau-svgrepo-com (1).svg"
+                    src="/svg/tableau-svgrepo-com (1).svg"
                     alt="Tableau"
                     width={48}
                     height={48}
@@ -272,26 +275,6 @@ export default function Home() {
                 <div>
                   <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">Tableau</h3>
                   <p className="text-[#666666]">Data visualization and business intelligence</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Alteryx */}
-            <div className="group bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1">
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center">
-                  <Image
-                    src="/images/alteryx.jpg"
-                    alt="Alteryx"
-                    width={48}
-                    height={48}
-                    className="w-12 h-12 rounded-lg object-cover"
-                  />
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">Alteryx</h3>
-                  <p className="text-[#4CAF50] font-medium mb-2">Alteryx Designer</p>
-                  <p className="text-[#666666]">Certified in data preparation and analytics using Alteryx Designer.</p>
                 </div>
               </div>
             </div>
