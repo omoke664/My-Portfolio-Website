@@ -91,11 +91,10 @@ export default function Home() {
             <div className="space-y-6 md:space-y-8 text-center md:text-left">
               <div className="space-y-4">
                 <h1 className="text-3xl md:text-6xl font-bold text-[#1B1B1B] leading-tight">
-                  Hi, I'm <span className="text-[#4CAF50]">Wesley Omoke</span>
+                  Hi, I&apos;m <span className="text-[#4CAF50]">Wesley Omoke</span>
                 </h1>
-                <p className="text-lg md:text-xl text-[#666666] leading-relaxed">
-                  Data Analyst passionate about transforming complex data into actionable insights. 
-                  Specializing in Python, SQL, and data visualization to drive informed decisions.
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                  I&apos;m a data analyst with a passion for turning complex data into actionable insights.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
@@ -211,7 +210,13 @@ export default function Home() {
             <div className="group bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1">
               <div className="flex flex-col items-center text-center">
                 <div className="flex-shrink-0 w-16 h-16 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center mb-4">
-                  <img src="/svg/excel-svgrepo-com.svg" alt="Excel" className="w-12 h-12" />
+                  <Image
+                    src="/images/bike_sales_sql.png"
+                    alt="Bike Sales Analysis"
+                    width={48}
+                    height={48}
+                    className="w-12 h-12 rounded-lg object-cover"
+                  />
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">Excel</h3>
@@ -238,7 +243,13 @@ export default function Home() {
             <div className="group bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1">
               <div className="flex flex-col items-center text-center">
                 <div className="flex-shrink-0 w-16 h-16 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center mb-4">
-                  <img src="/svg/python-svgrepo-com.svg" alt="Python" className="w-12 h-12" />
+                  <Image
+                    src="/images/python-svgrepo-com.svg"
+                    alt="Python"
+                    width={48}
+                    height={48}
+                    className="w-12 h-12 rounded-lg object-cover"
+                  />
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">Python</h3>
@@ -251,7 +262,13 @@ export default function Home() {
             <div className="group bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1">
               <div className="flex flex-col items-center text-center">
                 <div className="flex-shrink-0 w-16 h-16 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center mb-4">
-                  <img src="/svg/tableau-svgrepo-com (1).svg" alt="Tableau" className="w-12 h-12" />
+                  <Image
+                    src="/images/tableau-svgrepo-com (1).svg"
+                    alt="Tableau"
+                    width={48}
+                    height={48}
+                    className="w-12 h-12 rounded-lg object-cover"
+                  />
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">Tableau</h3>
@@ -266,10 +283,10 @@ export default function Home() {
                 <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center">
                   <Image
                     src="/images/alteryx.jpg"
-                    alt="Alteryx Logo"
+                    alt="Alteryx"
                     width={48}
                     height={48}
-                    className="w-8 h-8 object-contain"
+                    className="w-12 h-12 rounded-lg object-cover"
                   />
                 </div>
                 <div>
@@ -396,7 +413,7 @@ export default function Home() {
                         alt="JKUAT Logo"
                         width={48}
                         height={48}
-                        className="w-12 h-12 object-contain"
+                        className="w-12 h-12 rounded-lg object-cover"
                       />
                     </div>
                     <div>
@@ -429,7 +446,7 @@ export default function Home() {
                         alt="WorldQuant Logo"
                         width={48}
                         height={48}
-                        className="w-12 h-12 object-contain"
+                        className="w-12 h-12 rounded-lg object-cover"
                       />
                     </div>
                     <div>
@@ -457,11 +474,11 @@ export default function Home() {
                   <div className="group bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-6">
                     <div className="flex-shrink-0 w-16 h-16 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center">
                       <Image
-                        src="/svg/google-color-svgrepo-com.svg"
+                        src="/images/google-color-svgrepo-com.svg"
                         alt="Google Logo"
                         width={48}
                         height={48}
-                        className="w-12 h-12 object-contain"
+                        className="w-12 h-12 rounded-lg object-cover"
                       />
                     </div>
                     <div>
@@ -504,7 +521,7 @@ export default function Home() {
                     alt="WorldQuant Logo"
                     width={48}
                     height={48}
-                    className="w-8 h-8 object-contain"
+                    className="w-12 h-12 rounded-lg object-cover"
                   />
                 </div>
                 <div>
@@ -524,7 +541,7 @@ export default function Home() {
                     alt="Alteryx Logo"
                     width={48}
                     height={48}
-                    className="w-8 h-8 object-contain"
+                    className="w-12 h-12 rounded-lg object-cover"
                   />
                 </div>
                 <div>
@@ -539,7 +556,13 @@ export default function Home() {
             <div className="group bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1">
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center">
-                  <img src="/svg/cisco-svgrepo-com.svg" alt="Cisco" className="w-8 h-8" />
+                  <Image
+                    src="/images/cisco-svgrepo-com.svg"
+                    alt="Cisco"
+                    width={48}
+                    height={48}
+                    className="w-12 h-12 rounded-lg object-cover"
+                  />
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">Introduction to Data Science</h3>
@@ -553,7 +576,13 @@ export default function Home() {
             <div className="group bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1">
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center">
-                  <img src="/svg/google-color-svgrepo-com.svg" alt="Google" className="w-8 h-8" />
+                  <Image
+                    src="/images/google-color-svgrepo-com.svg"
+                    alt="Google"
+                    width={48}
+                    height={48}
+                    className="w-12 h-12 rounded-lg object-cover"
+                  />
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">Google Data Analytics</h3>
