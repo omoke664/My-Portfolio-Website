@@ -227,9 +227,9 @@ export default function Home() {
             {/* SQL Card */}
             <div className="group bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1">
               <div className="flex flex-col items-center text-center">
-                <div className="flex-shrink-0 w-16 h-16 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center mb-4">
+                <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center">
                   <Image
-                    src="/images/sql-icon.png"
+                    src="/svg/sql-svgrepo-com.svg"
                     alt="SQL"
                     width={48}
                     height={48}
@@ -456,8 +456,8 @@ export default function Home() {
                   <div className="group bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-6">
                     <div className="flex-shrink-0 w-16 h-16 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center">
                       <Image
-                        src="/images/google-color-svgrepo-com.svg"
-                        alt="Google Logo"
+                        src="/svg/google-color-svgrepo-com.svg"
+                        alt="Google"
                         width={48}
                         height={48}
                         className="w-12 h-12 rounded-lg object-cover"
@@ -539,7 +539,7 @@ export default function Home() {
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center">
                   <Image
-                    src="/images/cisco-svgrepo-com.svg"
+                    src="/svg/cisco-svgrepo-com.svg"
                     alt="Cisco"
                     width={48}
                     height={48}
@@ -559,7 +559,7 @@ export default function Home() {
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center">
                   <Image
-                    src="/images/google-color-svgrepo-com.svg"
+                    src="/svg/google-color-svgrepo-com.svg"
                     alt="Google"
                     width={48}
                     height={48}
