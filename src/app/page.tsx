@@ -653,7 +653,7 @@ export default function Home() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">Linear Regression</h3>
+                <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">Linear Regression on E-commerce Data</h3>
                 <p className="text-[#666666] mb-4">Predictive modeling of e-commerce sales using linear regression to forecast future trends and customer behavior.</p>
                 <div className="flex flex-wrap gap-4 justify-center">
                   <span className="px-3 py-1 bg-[#4CAF50]/10 text-[#4CAF50] rounded-full text-sm">Python</span>
@@ -674,7 +674,7 @@ export default function Home() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">London Bikes</h3>
+                <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">London Bikes Analysis using Excel</h3>
                 <p className="text-[#666666] mb-4">Analysis of London bike sharing data using Python and Pandas for insights into usage patterns and trends.</p>
                 <div className="flex flex-wrap gap-4 justify-center">
                   <span className="px-3 py-1 bg-[#4CAF50]/10 text-[#4CAF50] rounded-full text-sm">Python</span>
@@ -695,7 +695,7 @@ export default function Home() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">Coffee Consumption</h3>
+                <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">Coffee Consumption Analysis in India</h3>
                 <p className="text-[#666666] mb-4">Analysis of coffee consumption patterns and preferences using Python for data visualization and insights.</p>
                 <div className="flex flex-wrap gap-4 justify-center">
                   <span className="px-3 py-1 bg-[#4CAF50]/10 text-[#4CAF50] rounded-full text-sm">Python</span>
@@ -716,7 +716,7 @@ export default function Home() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">Psychology Analysis</h3>
+                <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">Psychology Analysis using Pandas</h3>
                 <p className="text-[#666666] mb-4">Data analysis of psychological patterns using Python and Pandas for statistical insights.</p>
                 <div className="flex flex-wrap gap-4 justify-center">
                   <span className="px-3 py-1 bg-[#4CAF50]/10 text-[#4CAF50] rounded-full text-sm">Python</span>
