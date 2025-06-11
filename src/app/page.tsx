@@ -769,7 +769,7 @@ export default function Home() {
               />
             </a>
             {/* WhatsApp */}
-            <a href="https://wa.me/25797340467" target="_blank" rel="noopener noreferrer" className="bg-white rounded-lg shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 p-2 flex justify-center items-center">
+            <a href="https://wa.me/254797340467" target="_blank" rel="noopener noreferrer" className="bg-white rounded-lg shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 p-2 flex justify-center items-center">
               <Image
                 src="/My-Portfolio-Website/svg/whatsapp-svgrepo-com.svg"
                 alt="WhatsApp"
