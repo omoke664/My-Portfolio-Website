@@ -378,7 +378,7 @@ export default function Home() {
                     </div>
                     <ul className="list-disc list-inside space-y-2 text-[#666666]">
                       <li>Collected data and participated in its analysis</li>
-                      <li>Supported Fintech Frontiers' initiatives</li>
+                      <li>Supported Fintech Frontiers&apos; initiatives</li>
                     </ul>
                   </div>
                 </div>
@@ -427,7 +427,7 @@ export default function Home() {
                         </div>
                       </div>
                       <div className="text-[#666666]">
-                        <p>Bachelor's Degree in Computer Technology</p>
+                        <p>Bachelor&apos;s Degree in Computer Technology</p>
                       </div>
                     </div>
                   </div>
@@ -634,7 +634,7 @@ export default function Home() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">Danny's Diner SQL Case Study</h3>
+                <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">Danny&apos;s Diner SQL Case Study</h3>
                 <p className="text-[#666666] mb-4">Interactive case study analyzing customer behavior, menu preferences, and loyalty program impact using SQL.</p>
                 <div className="flex flex-wrap gap-2">
                   <span className="px-3 py-1 bg-[#4CAF50]/10 text-[#4CAF50] rounded-full text-sm">SQL</span>
