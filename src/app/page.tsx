@@ -105,7 +105,7 @@ export default function Home() {
                   <div className="absolute inset-0 bg-gradient-to-r from-[#4CAF50] to-[#388E3C] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </a>
                 <a
-                  href="/resume.pdf"
+                  href="files/Resume_Wesley_Omoke.pdf"
                   download
                   className="btn-secondary group relative overflow-hidden w-full sm:w-auto text-center"
                 >
@@ -610,7 +610,7 @@ export default function Home() {
             </a>
 
             {/* British Airways */}
-            <a href="https://github.com/omoke664/British-Airways-Data-Analysis" target="_blank" rel="noopener noreferrer" className="group bg-white rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
+            <a href="https://github.com/omoke664/British_Airways_Review_Tableau_Visualization" target="_blank" rel="noopener noreferrer" className="group bg-white rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
               <div className="aspect-video bg-gray-100 relative">
                 <Image
                   src="/My-Portfolio-Website/images/BritishAirways.jpeg"
@@ -631,7 +631,7 @@ export default function Home() {
             </a>
 
             {/* Linear Regression */}
-            <a href="https://github.com/omoke664/E-commerce-Linear-Regression" target="_blank" rel="noopener noreferrer" className="group bg-white rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
+            <a href="https://github.com/omoke664/Linear-Regression-W-Python-E-commerce-Dataset" target="_blank" rel="noopener noreferrer" className="group bg-white rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
               <div className="aspect-video bg-gray-100 relative">
                 <Image
                   src="/My-Portfolio-Website/images/E-commeece.jpeg"
@@ -652,7 +652,7 @@ export default function Home() {
             </a>
 
             {/* London Bikes */}
-            <a href="https://github.com/omoke664/London-Bikes-Analysis" target="_blank" rel="noopener noreferrer" className="group bg-white rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
+            <a href="https://github.com/omoke664/London_Bikes_Data_Cleaning-Analysis" target="_blank" rel="noopener noreferrer" className="group bg-white rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
               <div className="aspect-video bg-gray-100 relative">
                 <Image
                   src="/My-Portfolio-Website/images/London.jpg"
