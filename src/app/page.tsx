@@ -93,7 +93,7 @@ export default function Home() {
       {/* Hero Section - Update for better mobile responsiveness */}
       <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
         <div className="absolute inset-0 bg-gradient-to-br from-[#E8F5E9] via-white to-[#F1F8E9] opacity-50"></div>
-        <div className="absolute inset-0 bg-[url('${getAssetPath('/grid.svg')}')] opacity-10"></div>
+        <div className="absolute inset-0 opacity-10" style={{ backgroundImage: `url(${getAssetPath('/grid.svg')})` }}></div>
         <div className="max-w-6xl mx-auto px-4 md:px-8 relative z-10">
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="space-y-6 md:space-y-8 text-center md:text-left">
@@ -208,7 +208,7 @@ export default function Home() {
       {/* Skills Section */}
       <section id="skills" className="section-light py-20 relative overflow-hidden scroll-mt-16">
         <div className="absolute inset-0 bg-gradient-to-br from-[#E8F5E9] via-white to-[#F1F8E9] opacity-50"></div>
-        <div className="absolute inset-0 bg-[url('${getAssetPath('/grid.svg')}')] opacity-10"></div>
+        <div className="absolute inset-0 opacity-10" style={{ backgroundImage: `url(${getAssetPath('/grid.svg')})` }}></div>
         <div className="max-w-6xl mx-auto px-4 md:px-8 relative z-10">
           <h2 className="text-3xl md:text-4xl font-bold text-[#1B1B1B] mb-12 text-center">
             Technical Skills
@@ -288,7 +288,7 @@ export default function Home() {
       {/* Work Experience Section */}
       <section id="experience" className="section-light py-20 relative overflow-hidden scroll-mt-16">
         <div className="absolute inset-0 bg-gradient-to-br from-[#E8F5E9] via-white to-[#F1F8E9] opacity-50"></div>
-        <div className="absolute inset-0 bg-[url('${getAssetPath('/grid.svg')}')] opacity-10"></div>
+        <div className="absolute inset-0 opacity-10" style={{ backgroundImage: `url(${getAssetPath('/grid.svg')})` }}></div>
         <div className="max-w-6xl mx-auto px-4 md:px-8 relative z-10">
           <h2 className="text-3xl md:text-4xl font-bold text-[#1B1B1B] mb-12 text-center">
             Work Experience
@@ -399,7 +399,7 @@ export default function Home() {
       {/* Education Section */}
       <section id="education" className="section-light py-20 relative overflow-hidden scroll-mt-16">
         <div className="absolute inset-0 bg-gradient-to-br from-[#E8F5E9] via-white to-[#F1F8E9] opacity-50"></div>
-        <div className="absolute inset-0 bg-[url('${getAssetPath('/grid.svg')}')] opacity-10"></div>
+        <div className="absolute inset-0 opacity-10" style={{ backgroundImage: `url(${getAssetPath('/grid.svg')})` }}></div>
         <div className="max-w-6xl mx-auto px-4 md:px-8 relative z-10">
           <h2 className="text-3xl md:text-4xl font-bold text-[#1B1B1B] mb-12 text-center">
             Education
@@ -536,7 +536,7 @@ export default function Home() {
       {/* Certificates Section */}
       <section id="certificates" className="section-light py-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#E8F5E9] via-white to-[#F1F8E9] opacity-50"></div>
-        <div className="absolute inset-0 bg-[url('${getAssetPath('/grid.svg')}')] opacity-10"></div>
+        <div className="absolute inset-0 opacity-10" style={{ backgroundImage: `url(${getAssetPath('/grid.svg')})` }}></div>
         <div className="max-w-6xl mx-auto px-4 md:px-8 relative z-10">
           <h2 className="text-3xl md:text-4xl font-bold text-[#1B1B1B] mb-12 text-center">
             Certifications
@@ -894,7 +894,7 @@ export default function Home() {
       {/* Contact Section */}
       <section id="contact" className="section-light py-20 relative overflow-hidden scroll-mt-16">
         <div className="absolute inset-0 bg-gradient-to-br from-[#E8F5E9] via-white to-[#F1F8E9] opacity-50"></div>
-        <div className="absolute inset-0 bg-[url('${getAssetPath('/grid.svg')}')] opacity-10"></div>
+        <div className="absolute inset-0 opacity-10" style={{ backgroundImage: `url(${getAssetPath('/grid.svg')})` }}></div>
         <div className="max-w-6xl mx-auto px-4 md:px-8 relative z-10">
           <h2 className="text-3xl md:text-4xl font-bold text-[#1B1B1B] mb-12 text-center">
             Get in Touch
