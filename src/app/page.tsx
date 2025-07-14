@@ -105,7 +105,7 @@ export default function Home() {
                   <div className="absolute inset-0 bg-gradient-to-r from-[#4CAF50] to-[#388E3C] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </a>
                 <a
-                  href="files/Resume_Wesley_Omoke.pdf"
+                  href="/files/Resume_Omoke_Wesley.pdf"
                   download
                   className="btn-secondary group relative overflow-hidden w-full sm:w-auto text-center"
                 >
@@ -124,7 +124,7 @@ export default function Home() {
               <div className="relative">
                 <div className="w-64 h-64 md:w-72 md:h-72 mx-auto rounded-full overflow-hidden border-4 border-[#4CAF50] shadow-xl">
                   <Image
-                    src="/My-Portfolio-Website/images/Wes.jpg"
+                    src="/images/Wes.jpg"
                     alt="Wes"
                     width={288}
                     height={288}
@@ -210,7 +210,7 @@ export default function Home() {
               <div className="flex flex-col items-center text-center">
                 <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center mb-4">
                   <Image
-                    src="/My-Portfolio-Website/svg/sql-svgrepo-com.svg"
+                    src="/svg/sql-svgrepo-com.svg"
                     alt="SQL"
                     width={48}
                     height={48}
@@ -227,7 +227,7 @@ export default function Home() {
               <div className="flex flex-col items-center text-center">
                 <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center mb-4">
                   <Image
-                    src="/My-Portfolio-Website/svg/python-svgrepo-com.svg"
+                    src="/svg/python-svgrepo-com.svg"
                     alt="Python"
                     width={48}
                     height={48}
@@ -244,7 +244,7 @@ export default function Home() {
               <div className="flex flex-col items-center text-center">
                 <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center mb-4">
                   <Image
-                    src="/My-Portfolio-Website/svg/tableau-svgrepo-com (1).svg"
+                    src="/svg/tableau-svgrepo-com (1).svg"
                     alt="Tableau"
                     width={48}
                     height={48}
@@ -261,7 +261,7 @@ export default function Home() {
               <div className="flex flex-col items-center text-center">
                 <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center mb-4">
                   <Image
-                    src="/My-Portfolio-Website/svg/excel-svgrepo-com.svg"
+                    src="/svg/excel-svgrepo-com.svg"
                     alt="Excel"
                     width={48}
                     height={48}
@@ -296,7 +296,7 @@ export default function Home() {
                   <div className="group bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1 flex items-start gap-4">
                     <div className="flex-shrink-0 w-20 h-20 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center">
                       <Image
-                        src="/My-Portfolio-Website/images/wrsc.png"
+                        src="/images/wrsc.png"
                         alt="WRSC"
                         width={80}
                         height={80}
@@ -356,7 +356,7 @@ export default function Home() {
                   <div className="group bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1 flex items-start gap-4">
                     <div className="flex-shrink-0 w-20 h-20 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center">
                       <Image
-                        src="/My-Portfolio-Website/images/fintech.png"
+                        src="/images/fintech.png"
                         alt="Fintech Frontiers"
                         width={80}
                         height={80}
@@ -405,18 +405,56 @@ export default function Home() {
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-[#4CAF50] border-4 border-white shadow-lg"></div>
                 <div className="ml-8 md:ml-0 md:pl-16">
                   <div className="group bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1">
-                    <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-4">
-                      <div>
-                        <h3 className="text-2xl font-semibold text-[#1B1B1B]">BSc Computer Technology</h3>
-                        <p className="text-[#4CAF50] font-medium">Jomo Kenyatta University of Agriculture and Technology</p>
-                      </div>
-                      <div className="text-[#666666] text-right">
-                        <p>2021 - 2025</p>
-                        <p>Nairobi, Kenya</p>
+                    <div className="flex items-center gap-4 mb-4">
+                      <Image
+                        src="/images/jkuat.png"
+                        alt="JKUAT Logo"
+                        width={48}
+                        height={48}
+                        className="rounded object-contain"
+                      />
+                      <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 w-full">
+                        <div>
+                          <h3 className="text-2xl font-semibold text-[#1B1B1B]">BSc Computer Technology</h3>
+                          <p className="text-[#4CAF50] font-medium">Jomo Kenyatta University of Agriculture and Technology</p>
+                        </div>
+                        <div className="text-[#666666] text-right ml-auto">
+                          <p>2021 - 2025</p>
+                          <p>Nairobi, Kenya</p>
+                        </div>
                       </div>
                     </div>
                     <div className="text-[#666666]">
                       <p>Bachelor&apos;s Degree in Computer Technology</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* ALX Data Science */}
+              <div className="group relative">
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-[#4CAF50] border-4 border-white shadow-lg"></div>
+                <div className="ml-8 md:ml-0 md:pl-16">
+                  <div className="group bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1">
+                    <div className="flex items-center gap-4 mb-4">
+                      <Image
+                        src="/images/alx.png"
+                        alt="ALX Africa Logo"
+                        width={48}
+                        height={48}
+                        className="rounded object-contain"
+                      />
+                      <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 w-full">
+                        <div>
+                          <h3 className="text-2xl font-semibold text-[#1B1B1B]">ALX Data Science</h3>
+                          <p className="text-[#4CAF50] font-medium">ALX Africa</p>
+                        </div>
+                        <div className="text-[#666666] text-right ml-auto">
+                          <p>June 2025 - September 2026</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="text-[#666666]">
+                      <p>Data Science Program</p>
                     </div>
                   </div>
                 </div>
@@ -427,13 +465,22 @@ export default function Home() {
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-[#4CAF50] border-4 border-white shadow-lg"></div>
                 <div className="ml-8 md:ml-0 md:pl-16">
                   <div className="group bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1">
-                    <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-4">
-                      <div>
-                        <h3 className="text-2xl font-semibold text-[#1B1B1B]">Applied Data Science</h3>
-                        <p className="text-[#4CAF50] font-medium">WorldQuant University</p>
-                      </div>
-                      <div className="text-[#666666] text-right">
-                        <p>August 2024 - September 2024</p>
+                    <div className="flex items-center gap-4 mb-4">
+                      <Image
+                        src="/images/applied_ds.png"
+                        alt="Applied Data Science Logo"
+                        width={48}
+                        height={48}
+                        className="rounded object-contain"
+                      />
+                      <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 w-full">
+                        <div>
+                          <h3 className="text-2xl font-semibold text-[#1B1B1B]">Applied Data Science</h3>
+                          <p className="text-[#4CAF50] font-medium">WorldQuant University</p>
+                        </div>
+                        <div className="text-[#666666] text-right ml-auto">
+                          <p>August 2024 - September 2024</p>
+                        </div>
                       </div>
                     </div>
                     <div className="text-[#666666]">
@@ -448,13 +495,22 @@ export default function Home() {
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-[#4CAF50] border-4 border-white shadow-lg"></div>
                 <div className="ml-8 md:ml-0 md:pl-16">
                   <div className="group bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1">
-                    <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-4">
-                      <div>
-                        <h3 className="text-2xl font-semibold text-[#1B1B1B]">Google Data Analytics</h3>
-                        <p className="text-[#4CAF50] font-medium">Google - Coursera</p>
-                      </div>
-                      <div className="text-[#666666] text-right">
-                        <p>September 2024 - November 2024</p>
+                    <div className="flex items-center gap-4 mb-4">
+                      <Image
+                        src="/images/google_analytics.png"
+                        alt="Google Data Analytics Logo"
+                        width={48}
+                        height={48}
+                        className="rounded object-contain"
+                      />
+                      <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 w-full">
+                        <div>
+                          <h3 className="text-2xl font-semibold text-[#1B1B1B]">Google Data Analytics</h3>
+                          <p className="text-[#4CAF50] font-medium">Google - Coursera</p>
+                        </div>
+                        <div className="text-[#666666] text-right ml-auto">
+                          <p>September 2024 - November 2024</p>
+                        </div>
                       </div>
                     </div>
                     <div className="text-[#666666]">
@@ -482,15 +538,17 @@ export default function Home() {
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center">
                   <Image
-                    src="/My-Portfolio-Website/images/worldquant.png"
-                    alt="WorldQuant Logo"
+                    src="/images/applied_ds.png"
+                    alt="Applied Data Science Logo"
                     width={48}
                     height={48}
                     className="w-12 h-12 rounded-lg object-cover"
                   />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">Applied Data Science</h3>
+                  <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">
+                    <a href="https://www.credly.com/badges/6493c4dc-7c83-4709-ad4c-99bd26db4988/public_url" target="_blank" rel="noopener noreferrer" className="hover:underline text-[#4CAF50]">Applied Data Science</a>
+                  </h3>
                   <p className="text-[#4CAF50] font-medium mb-2">WorldQuant University</p>
                   <p className="text-[#666666]">Professional certification in applied data science concepts and methodologies</p>
                 </div>
@@ -502,15 +560,17 @@ export default function Home() {
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center">
                   <Image
-                    src="/My-Portfolio-Website/images/alteryx.jpg"
-                    alt="Alteryx Logo"
+                    src="/images/alteryx_ml.png"
+                    alt="Alteryx Machine Learning Logo"
                     width={48}
                     height={48}
                     className="w-12 h-12 rounded-lg object-cover"
                   />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">Machine Learning Fundamentals</h3>
+                  <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">
+                    <a href="https://www.credly.com/badges/a2bcf605-76d6-4a17-b0e5-14029688da93/public_url" target="_blank" rel="noopener noreferrer" className="hover:underline text-[#4CAF50]">Machine Learning Fundamentals</a>
+                  </h3>
                   <p className="text-[#4CAF50] font-medium mb-2">Alteryx</p>
                   <p className="text-[#666666]">Industry-recognized certification in machine learning fundamentals.</p>
                 </div>
@@ -522,15 +582,17 @@ export default function Home() {
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center">
                   <Image
-                    src="/My-Portfolio-Website/svg/cisco-svgrepo-com.svg"
-                    alt="Cisco"
+                    src="/images/ds_cisco.png"
+                    alt="Cisco Data Science Logo"
                     width={48}
                     height={48}
                     className="w-12 h-12 rounded-lg object-cover"
                   />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">Introduction to Data Science</h3>
+                  <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">
+                    <a href="https://www.credly.com/badges/4170e4bd-d99d-49fe-89bf-92c9d1946258/public_url" target="_blank" rel="noopener noreferrer" className="hover:underline text-[#4CAF50]">Introduction to Data Science</a>
+                  </h3>
                   <p className="text-[#4CAF50] font-medium mb-2">Cisco</p>
                   <p className="text-[#666666]">Industry-recognized certification in data science fundamentals</p>
                 </div>
@@ -542,17 +604,63 @@ export default function Home() {
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center">
                   <Image
-                    src="/My-Portfolio-Website/svg/google-color-svgrepo-com.svg"
-                    alt="Google"
+                    src="/images/google_analytics.png"
+                    alt="Google Data Analytics Logo"
                     width={48}
                     height={48}
                     className="w-12 h-12 rounded-lg object-cover"
                   />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">Google Data Analytics</h3>
+                  <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">
+                    <a href="https://www.credly.com/badges/1406a15f-913d-46bc-b05a-5a203d0f4c32/public_url" target="_blank" rel="noopener noreferrer" className="hover:underline text-[#4CAF50]">Google Data Analytics</a>
+                  </h3>
                   <p className="text-[#4CAF50] font-medium mb-2">Google - Coursera</p>
                   <p className="text-[#666666]">Professional Certificate in Data Analytics</p>
+                </div>
+              </div>
+            </div>
+
+            {/* AWS Educate Introduction to Generative AI */}
+            <div className="group bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1">
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center">
+                  <Image
+                    src="/images/aws_educate.png"
+                    alt="AWS Educate Logo"
+                    width={48}
+                    height={48}
+                    className="w-12 h-12 rounded-lg object-cover"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">
+                    <a href="https://www.credly.com/badges/c34caeaf-8b96-4476-ba26-69fd7f73810c/public_url" target="_blank" rel="noopener noreferrer" className="hover:underline text-[#4CAF50]">AWS Educate Introduction to Generative AI</a>
+                  </h3>
+                  <p className="text-[#4CAF50] font-medium mb-2">Amazon Web Services Training and Certification</p>
+                  <p className="text-[#666666]">Credential for foundational knowledge in Generative AI</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Enterprise Design Thinking Practitioner */}
+            <div className="group bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1">
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center">
+                  <Image
+                    src="/images/enterprise.png"
+                    alt="Enterprise Design Thinking Logo"
+                    width={48}
+                    height={48}
+                    className="w-12 h-12 rounded-lg object-cover"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">
+                    <a href="https://www.credly.com/badges/18c2b06f-de71-4fc1-b9dc-b23952026c4e/public_url" target="_blank" rel="noopener noreferrer" className="hover:underline text-[#4CAF50]">Enterprise Design Thinking Practitioner</a>
+                  </h3>
+                  <p className="text-[#4CAF50] font-medium mb-2">IBM</p>
+                  <p className="text-[#666666]">Credential for Enterprise Design Thinking skills</p>
                 </div>
               </div>
             </div>
@@ -567,11 +675,131 @@ export default function Home() {
             My Projects
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Netflix Customer Churn Analysis */}
+            <a href="https://github.com/omoke664/Data_Science-Analysis-Projects/tree/main/Netflix_Customer_churn_analysis" target="_blank" rel="noopener noreferrer" className="group bg-white rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
+              <div className="aspect-video bg-[#181818] flex items-center justify-center relative">
+                <Image
+                  src="/images/netflix_dashboard.png"
+                  alt="Netflix Customer Churn Dashboard"
+                  width={400}
+                  height={225}
+                  className="object-cover w-full h-full rounded"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">Netflix Customer Churn Analysis</h3>
+                <p className="text-[#666666] mb-4">This repository contains a comprehensive analysis of Netflix customer churn, identifying key drivers and providing data-driven recommendations to improve customer retention.</p>
+                <div className="flex flex-wrap gap-4 justify-center">
+                  <span className="px-3 py-1 bg-[#4CAF50]/10 text-[#4CAF50] rounded-full text-sm">Data Analysis</span>
+                  <span className="px-3 py-1 bg-[#4CAF50]/10 text-[#4CAF50] rounded-full text-sm">Churn</span>
+                </div>
+              </div>
+            </a>
+            {/* Superstore Analysis */}
+            <a href="https://github.com/omoke664/Data_Science-Analysis-Projects/tree/main/Superstore_analysis" target="_blank" rel="noopener noreferrer" className="group bg-white rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
+              <div className="aspect-video bg-gray-100 relative">
+                <Image
+                  src="/images/sales_dashboard.png"
+                  alt="Superstore Analysis"
+                  width={400}
+                  height={225}
+                  className="object-cover w-full h-full"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">Superstore Analysis</h3>
+                <p className="text-[#666666] mb-4">This project provides a comprehensive analysis of the Superstore's sales data using Microsoft Excel. The goal is to uncover insights into sales performance, profitability, and customer behavior across various dimensions.</p>
+                <div className="flex flex-wrap gap-4 justify-center">
+                  <span className="px-3 py-1 bg-[#4CAF50]/10 text-[#4CAF50] rounded-full text-sm">Excel</span>
+                  <span className="px-3 py-1 bg-[#4CAF50]/10 text-[#4CAF50] rounded-full text-sm">Sales Analysis</span>
+                </div>
+              </div>
+            </a>
+            {/* Data Cleaning with Excel */}
+            <a href="https://github.com/omoke664/Data_Science-Analysis-Projects/tree/main/Data_Cleaning_With%20Excel" target="_blank" rel="noopener noreferrer" className="group bg-white rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
+              <div className="aspect-video bg-gray-100 relative">
+                <Image
+                  src="/images/data_cleaning.png"
+                  alt="Data Cleaning with Excel"
+                  width={400}
+                  height={225}
+                  className="object-cover w-full h-full"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">Data Cleaning with Excel</h3>
+                <p className="text-[#666666] mb-4">Welcome to my Data Cleaning project! This repository demonstrates how a messy dataset can be cleaned and transformed into a well-structured, analysis-ready format using spreadsheet tools and logical functions.</p>
+                <div className="flex flex-wrap gap-4 justify-center">
+                  <span className="px-3 py-1 bg-[#4CAF50]/10 text-[#4CAF50] rounded-full text-sm">Excel</span>
+                  <span className="px-3 py-1 bg-[#4CAF50]/10 text-[#4CAF50] rounded-full text-sm">Data Cleaning</span>
+                </div>
+              </div>
+            </a>
+            {/* India Staff Data Analysis */}
+            <a href="https://github.com/omoke664/Data_Science-Analysis-Projects/tree/main/India_Staff_Analysis" target="_blank" rel="noopener noreferrer" className="group bg-white rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
+              <div className="aspect-video bg-gray-100 relative">
+                <Image
+                  src="/images/company_dashboard.png"
+                  alt="India Staff Data Analysis"
+                  width={400}
+                  height={225}
+                  className="object-cover w-full h-full"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">India Staff Data Analysis</h3>
+                <p className="text-[#666666] mb-4">This project performs an in-depth analysis of a staff dataset from a company in India. The primary goal is to derive insights into the company's workforce by examining key metrics related to demographics, compensation, and performance. The analysis is presented through two interactive dashboards: one for a company-wide overview and another for detailed departmental analysis.</p>
+                <div className="flex flex-wrap gap-4 justify-center">
+                  <span className="px-3 py-1 bg-[#4CAF50]/10 text-[#4CAF50] rounded-full text-sm">Excel</span>
+                  <span className="px-3 py-1 bg-[#4CAF50]/10 text-[#4CAF50] rounded-full text-sm">Dashboard</span>
+                </div>
+              </div>
+            </a>
+            {/* London Bikes */}
+            <a href="https://github.com/omoke664/London_Bikes_Data_Cleaning-Analysis" target="_blank" rel="noopener noreferrer" className="group bg-white rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
+              <div className="aspect-video bg-gray-100 relative">
+                <Image
+                  src="/images/london_bike_sales_dashboard.png"
+                  alt="London Bikes Analysis"
+                  width={400}
+                  height={225}
+                  className="object-cover w-full h-full"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">London Bikes Analysis using Excel</h3>
+                <p className="text-[#666666] mb-4">Analysis of London bike sharing data using Python and Pandas for insights into usage patterns and trends.</p>
+                <div className="flex flex-wrap gap-4 justify-center">
+                  <span className="px-3 py-1 bg-[#4CAF50]/10 text-[#4CAF50] rounded-full text-sm">Python</span>
+                  <span className="px-3 py-1 bg-[#4CAF50]/10 text-[#4CAF50] rounded-full text-sm">Pandas</span>
+                </div>
+              </div>
+            </a>
+            {/* Psychology Analysis */}
+            <a href="https://github.com/omoke664/Data_Science-Analysis-Projects/tree/main/Psychology_Analysis" target="_blank" rel="noopener noreferrer" className="group bg-white rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
+              <div className="aspect-video bg-gray-100 relative">
+                <Image
+                  src="/images/psychology.jpeg"
+                  alt="Psychology Analysis"
+                  width={400}
+                  height={225}
+                  className="object-cover w-full h-full"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">Psychology Analysis</h3>
+                <p className="text-[#666666] mb-4">Data analysis of psychological patterns using Python and Pandas for statistical insights.</p>
+                <div className="flex flex-wrap gap-4 justify-center">
+                  <span className="px-3 py-1 bg-[#4CAF50]/10 text-[#4CAF50] rounded-full text-sm">Python</span>
+                  <span className="px-3 py-1 bg-[#4CAF50]/10 text-[#4CAF50] rounded-full text-sm">Pandas</span>
+                </div>
+              </div>
+            </a>
             {/* Bike Store Analysis */}
             <a href="https://github.com/omoke664/Bike-Store-Analysis-SQL-" target="_blank" rel="noopener noreferrer" className="group bg-white rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
               <div className="aspect-video bg-gray-100 relative">
                 <Image
-                  src="/My-Portfolio-Website/images/bike_sales_sql.jpeg"
+                  src="/images/bike_sales_sql.jpeg"
                   alt="Bike Store Analysis SQL"
                   width={400}
                   height={225}
@@ -592,7 +820,7 @@ export default function Home() {
             <a href="https://github.com/omoke664/Danny-s-Diner-SQL-Case-Study" target="_blank" rel="noopener noreferrer" className="group bg-white rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
               <div className="aspect-video bg-gray-100 relative">
                 <Image
-                  src="/My-Portfolio-Website/images/danys_diner.png"
+                  src="/images/danys_diner.png"
                   alt="Danny's Diner Case Study"
                   width={400}
                   height={225}
@@ -613,7 +841,7 @@ export default function Home() {
             <a href="https://github.com/omoke664/British_Airways_Review_Tableau_Visualization" target="_blank" rel="noopener noreferrer" className="group bg-white rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
               <div className="aspect-video bg-gray-100 relative">
                 <Image
-                  src="/My-Portfolio-Website/images/BritishAirways.jpeg"
+                  src="/images/BritishAirways.jpeg"
                   alt="British Airways Analysis"
                   width={400}
                   height={225}
@@ -634,7 +862,7 @@ export default function Home() {
             <a href="https://github.com/omoke664/Linear-Regression-W-Python-E-commerce-Dataset" target="_blank" rel="noopener noreferrer" className="group bg-white rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
               <div className="aspect-video bg-gray-100 relative">
                 <Image
-                  src="/My-Portfolio-Website/images/E-commeece.jpeg"
+                  src="/images/E-commeece.jpeg"
                   alt="E-commerce Analysis"
                   width={400}
                   height={225}
@@ -647,69 +875,6 @@ export default function Home() {
                 <div className="flex flex-wrap gap-4 justify-center">
                   <span className="px-3 py-1 bg-[#4CAF50]/10 text-[#4CAF50] rounded-full text-sm">Python</span>
                   <span className="px-3 py-1 bg-[#4CAF50]/10 text-[#4CAF50] rounded-full text-sm">Machine Learning</span>
-                </div>
-              </div>
-            </a>
-
-            {/* London Bikes */}
-            <a href="https://github.com/omoke664/London_Bikes_Data_Cleaning-Analysis" target="_blank" rel="noopener noreferrer" className="group bg-white rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
-              <div className="aspect-video bg-gray-100 relative">
-                <Image
-                  src="/My-Portfolio-Website/images/London.jpg"
-                  alt="London Bikes Analysis"
-                  width={400}
-                  height={225}
-                  className="object-cover w-full h-full"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">London Bikes Analysis using Excel</h3>
-                <p className="text-[#666666] mb-4">Analysis of London bike sharing data using Python and Pandas for insights into usage patterns and trends.</p>
-                <div className="flex flex-wrap gap-4 justify-center">
-                  <span className="px-3 py-1 bg-[#4CAF50]/10 text-[#4CAF50] rounded-full text-sm">Python</span>
-                  <span className="px-3 py-1 bg-[#4CAF50]/10 text-[#4CAF50] rounded-full text-sm">Pandas</span>
-                </div>
-              </div>
-            </a>
-
-            {/* Coffee Consumption */}
-            <a href="https://github.com/omoke664/Coffee-Consumption-Analysis" target="_blank" rel="noopener noreferrer" className="group bg-white rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
-              <div className="aspect-video bg-gray-100 relative">
-                <Image
-                  src="/My-Portfolio-Website/images/coffee.jpg"
-                  alt="Coffee Consumption Analysis"
-                  width={400}
-                  height={225}
-                  className="object-cover w-full h-full"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">Coffee Consumption Analysis in India</h3>
-                <p className="text-[#666666] mb-4">Analysis of coffee consumption patterns and preferences using Python for data visualization and insights.</p>
-                <div className="flex flex-wrap gap-4 justify-center">
-                  <span className="px-3 py-1 bg-[#4CAF50]/10 text-[#4CAF50] rounded-full text-sm">Python</span>
-                  <span className="px-3 py-1 bg-[#4CAF50]/10 text-[#4CAF50] rounded-full text-sm">Data Visualization</span>
-                </div>
-              </div>
-            </a>
-
-            {/* Psychology Analysis */}
-            <a href="#" target="_blank" rel="noopener noreferrer" className="group bg-white rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
-              <div className="aspect-video bg-gray-100 relative">
-                <Image
-                  src="/My-Portfolio-Website/images/psychology.jpeg"
-                  alt="Psychology Analysis with Python"
-                  width={400}
-                  height={225}
-                  className="object-cover w-full h-full"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">Psychology Analysis using Pandas</h3>
-                <p className="text-[#666666] mb-4">Data analysis of psychological patterns using Python and Pandas for statistical insights.</p>
-                <div className="flex flex-wrap gap-4 justify-center">
-                  <span className="px-3 py-1 bg-[#4CAF50]/10 text-[#4CAF50] rounded-full text-sm">Python</span>
-                  <span className="px-3 py-1 bg-[#4CAF50]/10 text-[#4CAF50] rounded-full text-sm">Pandas</span>
                 </div>
               </div>
             </a>
@@ -730,7 +895,7 @@ export default function Home() {
             {/* Email */}
             <a href="mailto:omokeleywes@gmail.com" className="bg-white rounded-lg shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 p-2 flex justify-center items-center">
               <Image
-                src="/My-Portfolio-Website/svg/gmail-svgrepo-com.svg"
+                src="/svg/gmail-svgrepo-com.svg"
                 alt="Email"
                 width={24}
                 height={24}
@@ -740,7 +905,7 @@ export default function Home() {
             {/* LinkedIn */}
             <a href="https://www.linkedin.com/in/wesley-omoke-271954231/" target="_blank" rel="noopener noreferrer" className="bg-white rounded-lg shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 p-2 flex justify-center items-center">
               <Image
-                src="/My-Portfolio-Website/svg/linkedin-icon-svgrepo-com.svg"
+                src="/svg/linkedin-icon-svgrepo-com.svg"
                 alt="LinkedIn"
                 width={24}
                 height={24}
@@ -750,7 +915,7 @@ export default function Home() {
             {/* GitHub */}
             <a href="https://github.com/omoke664" target="_blank" rel="noopener noreferrer" className="bg-white rounded-lg shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 p-2 flex justify-center items-center">
               <Image
-                src="/My-Portfolio-Website/svg/github-142-svgrepo-com.svg"
+                src="/svg/github-142-svgrepo-com.svg"
                 alt="GitHub"
                 width={24}
                 height={24}
@@ -760,7 +925,7 @@ export default function Home() {
             {/* WhatsApp */}
             <a href="https://wa.me/254797340467" target="_blank" rel="noopener noreferrer" className="bg-white rounded-lg shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 p-2 flex justify-center items-center">
               <Image
-                src="/My-Portfolio-Website/svg/whatsapp-svgrepo-com.svg"
+                src="/svg/whatsapp-svgrepo-com.svg"
                 alt="WhatsApp"
                 width={24}
                 height={24}
@@ -770,7 +935,7 @@ export default function Home() {
             {/* Credly */}
             <a href="https://www.credly.com/users/wesley-omoke.ccffc8e6" target="_blank" rel="noopener noreferrer" className="bg-white rounded-lg shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 p-2 flex justify-center items-center">
               <Image
-                src="/My-Portfolio-Website/svg/credly-svgrepo-com.svg"
+                src="/svg/credly-svgrepo-com.svg"
                 alt="Credly"
                 width={24}
                 height={24}
