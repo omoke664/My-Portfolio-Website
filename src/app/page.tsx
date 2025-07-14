@@ -2,6 +2,15 @@
 
 import Image from "next/image";
 
+// Utility to prefix asset paths with basePath for GitHub Pages compatibility
+function getAssetPath(path: string) {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+  if (path.startsWith('/')) {
+    return `${basePath}${path}`;
+  }
+  return path;
+}
+
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
@@ -84,7 +93,7 @@ export default function Home() {
       {/* Hero Section - Update for better mobile responsiveness */}
       <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
         <div className="absolute inset-0 bg-gradient-to-br from-[#E8F5E9] via-white to-[#F1F8E9] opacity-50"></div>
-        <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10"></div>
+        <div className="absolute inset-0 bg-[url('${getAssetPath('/grid.svg')}')] opacity-10"></div>
         <div className="max-w-6xl mx-auto px-4 md:px-8 relative z-10">
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="space-y-6 md:space-y-8 text-center md:text-left">
@@ -124,7 +133,7 @@ export default function Home() {
               <div className="relative">
                 <div className="w-64 h-64 md:w-72 md:h-72 mx-auto rounded-full overflow-hidden border-4 border-[#4CAF50] shadow-xl">
                   <Image
-                    src="/images/Wes.jpg"
+                    src={getAssetPath('/images/Wes.jpg')}
                     alt="Wes"
                     width={288}
                     height={288}
@@ -199,7 +208,7 @@ export default function Home() {
       {/* Skills Section */}
       <section id="skills" className="section-light py-20 relative overflow-hidden scroll-mt-16">
         <div className="absolute inset-0 bg-gradient-to-br from-[#E8F5E9] via-white to-[#F1F8E9] opacity-50"></div>
-        <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10"></div>
+        <div className="absolute inset-0 bg-[url('${getAssetPath('/grid.svg')}')] opacity-10"></div>
         <div className="max-w-6xl mx-auto px-4 md:px-8 relative z-10">
           <h2 className="text-3xl md:text-4xl font-bold text-[#1B1B1B] mb-12 text-center">
             Technical Skills
@@ -210,7 +219,7 @@ export default function Home() {
               <div className="flex flex-col items-center text-center">
                 <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center mb-4">
                   <Image
-                    src="/svg/sql-svgrepo-com.svg"
+                    src={getAssetPath('/svg/sql-svgrepo-com.svg')}
                     alt="SQL"
                     width={48}
                     height={48}
@@ -227,7 +236,7 @@ export default function Home() {
               <div className="flex flex-col items-center text-center">
                 <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center mb-4">
                   <Image
-                    src="/svg/python-svgrepo-com.svg"
+                    src={getAssetPath('/svg/python-svgrepo-com.svg')}
                     alt="Python"
                     width={48}
                     height={48}
@@ -244,7 +253,7 @@ export default function Home() {
               <div className="flex flex-col items-center text-center">
                 <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center mb-4">
                   <Image
-                    src="/svg/tableau-svgrepo-com (1).svg"
+                    src={getAssetPath('/svg/tableau-svgrepo-com (1).svg')}
                     alt="Tableau"
                     width={48}
                     height={48}
@@ -261,7 +270,7 @@ export default function Home() {
               <div className="flex flex-col items-center text-center">
                 <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center mb-4">
                   <Image
-                    src="/svg/excel-svgrepo-com.svg"
+                    src={getAssetPath('/svg/excel-svgrepo-com.svg')}
                     alt="Excel"
                     width={48}
                     height={48}
@@ -279,7 +288,7 @@ export default function Home() {
       {/* Work Experience Section */}
       <section id="experience" className="section-light py-20 relative overflow-hidden scroll-mt-16">
         <div className="absolute inset-0 bg-gradient-to-br from-[#E8F5E9] via-white to-[#F1F8E9] opacity-50"></div>
-        <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10"></div>
+        <div className="absolute inset-0 bg-[url('${getAssetPath('/grid.svg')}')] opacity-10"></div>
         <div className="max-w-6xl mx-auto px-4 md:px-8 relative z-10">
           <h2 className="text-3xl md:text-4xl font-bold text-[#1B1B1B] mb-12 text-center">
             Work Experience
@@ -296,7 +305,7 @@ export default function Home() {
                   <div className="group bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1 flex items-start gap-4">
                     <div className="flex-shrink-0 w-20 h-20 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center">
                       <Image
-                        src="/images/wrsc.png"
+                        src={getAssetPath('/images/wrsc.png')}
                         alt="WRSC"
                         width={80}
                         height={80}
@@ -356,7 +365,7 @@ export default function Home() {
                   <div className="group bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1 flex items-start gap-4">
                     <div className="flex-shrink-0 w-20 h-20 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center">
                       <Image
-                        src="/images/fintech.png"
+                        src={getAssetPath('/images/fintech.png')}
                         alt="Fintech Frontiers"
                         width={80}
                         height={80}
@@ -390,7 +399,7 @@ export default function Home() {
       {/* Education Section */}
       <section id="education" className="section-light py-20 relative overflow-hidden scroll-mt-16">
         <div className="absolute inset-0 bg-gradient-to-br from-[#E8F5E9] via-white to-[#F1F8E9] opacity-50"></div>
-        <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10"></div>
+        <div className="absolute inset-0 bg-[url('${getAssetPath('/grid.svg')}')] opacity-10"></div>
         <div className="max-w-6xl mx-auto px-4 md:px-8 relative z-10">
           <h2 className="text-3xl md:text-4xl font-bold text-[#1B1B1B] mb-12 text-center">
             Education
@@ -407,7 +416,7 @@ export default function Home() {
                   <div className="group bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1">
                     <div className="flex items-center gap-4 mb-4">
                       <Image
-                        src="/images/jkuat.png"
+                        src={getAssetPath('/images/jkuat.png')}
                         alt="JKUAT Logo"
                         width={48}
                         height={48}
@@ -437,7 +446,7 @@ export default function Home() {
                   <div className="group bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1">
                     <div className="flex items-center gap-4 mb-4">
                       <Image
-                        src="/images/alx.png"
+                        src={getAssetPath('/images/alx.png')}
                         alt="ALX Africa Logo"
                         width={48}
                         height={48}
@@ -467,7 +476,7 @@ export default function Home() {
                   <div className="group bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1">
                     <div className="flex items-center gap-4 mb-4">
                       <Image
-                        src="/images/applied_ds.png"
+                        src={getAssetPath('/images/applied_ds.png')}
                         alt="Applied Data Science Logo"
                         width={48}
                         height={48}
@@ -497,7 +506,7 @@ export default function Home() {
                   <div className="group bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1">
                     <div className="flex items-center gap-4 mb-4">
                       <Image
-                        src="/images/google_analytics.png"
+                        src={getAssetPath('/images/google_analytics.png')}
                         alt="Google Data Analytics Logo"
                         width={48}
                         height={48}
@@ -527,7 +536,7 @@ export default function Home() {
       {/* Certificates Section */}
       <section id="certificates" className="section-light py-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#E8F5E9] via-white to-[#F1F8E9] opacity-50"></div>
-        <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10"></div>
+        <div className="absolute inset-0 bg-[url('${getAssetPath('/grid.svg')}')] opacity-10"></div>
         <div className="max-w-6xl mx-auto px-4 md:px-8 relative z-10">
           <h2 className="text-3xl md:text-4xl font-bold text-[#1B1B1B] mb-12 text-center">
             Certifications
@@ -538,7 +547,7 @@ export default function Home() {
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center">
                   <Image
-                    src="/images/applied_ds.png"
+                    src={getAssetPath('/images/applied_ds.png')}
                     alt="Applied Data Science Logo"
                     width={48}
                     height={48}
@@ -560,7 +569,7 @@ export default function Home() {
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center">
                   <Image
-                    src="/images/alteryx_ml.png"
+                    src={getAssetPath('/images/alteryx_ml.png')}
                     alt="Alteryx Machine Learning Logo"
                     width={48}
                     height={48}
@@ -582,7 +591,7 @@ export default function Home() {
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center">
                   <Image
-                    src="/images/ds_cisco.png"
+                    src={getAssetPath('/images/ds_cisco.png')}
                     alt="Cisco Data Science Logo"
                     width={48}
                     height={48}
@@ -604,7 +613,7 @@ export default function Home() {
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center">
                   <Image
-                    src="/images/google_analytics.png"
+                    src={getAssetPath('/images/google_analytics.png')}
                     alt="Google Data Analytics Logo"
                     width={48}
                     height={48}
@@ -626,7 +635,7 @@ export default function Home() {
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center">
                   <Image
-                    src="/images/aws_educate.png"
+                    src={getAssetPath('/images/aws_educate.png')}
                     alt="AWS Educate Logo"
                     width={48}
                     height={48}
@@ -648,7 +657,7 @@ export default function Home() {
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#4CAF50]/10 flex items-center justify-center">
                   <Image
-                    src="/images/enterprise.png"
+                    src={getAssetPath('/images/enterprise.png')}
                     alt="Enterprise Design Thinking Logo"
                     width={48}
                     height={48}
@@ -679,7 +688,7 @@ export default function Home() {
             <a href="https://github.com/omoke664/Data_Science-Analysis-Projects/tree/main/Netflix_Customer_churn_analysis" target="_blank" rel="noopener noreferrer" className="group bg-white rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
               <div className="aspect-video bg-[#181818] flex items-center justify-center relative">
                 <Image
-                  src="/images/netflix_dashboard.png"
+                  src={getAssetPath('/images/netflix_dashboard.png')}
                   alt="Netflix Customer Churn Dashboard"
                   width={400}
                   height={225}
@@ -699,7 +708,7 @@ export default function Home() {
             <a href="https://github.com/omoke664/Data_Science-Analysis-Projects/tree/main/Superstore_analysis" target="_blank" rel="noopener noreferrer" className="group bg-white rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
               <div className="aspect-video bg-gray-100 relative">
                 <Image
-                  src="/images/sales_dashboard.png"
+                  src={getAssetPath('/images/sales_dashboard.png')}
                   alt="Superstore Analysis"
                   width={400}
                   height={225}
@@ -719,7 +728,7 @@ export default function Home() {
             <a href="https://github.com/omoke664/Data_Science-Analysis-Projects/tree/main/Data_Cleaning_With%20Excel" target="_blank" rel="noopener noreferrer" className="group bg-white rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
               <div className="aspect-video bg-gray-100 relative">
                 <Image
-                  src="/images/data_cleaning.png"
+                  src={getAssetPath('/images/data_cleaning.png')}
                   alt="Data Cleaning with Excel"
                   width={400}
                   height={225}
@@ -739,7 +748,7 @@ export default function Home() {
             <a href="https://github.com/omoke664/Data_Science-Analysis-Projects/tree/main/India_Staff_Analysis" target="_blank" rel="noopener noreferrer" className="group bg-white rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
               <div className="aspect-video bg-gray-100 relative">
                 <Image
-                  src="/images/company_dashboard.png"
+                  src={getAssetPath('/images/company_dashboard.png')}
                   alt="India Staff Data Analysis"
                   width={400}
                   height={225}
@@ -759,7 +768,7 @@ export default function Home() {
             <a href="https://github.com/omoke664/London_Bikes_Data_Cleaning-Analysis" target="_blank" rel="noopener noreferrer" className="group bg-white rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
               <div className="aspect-video bg-gray-100 relative">
                 <Image
-                  src="/images/london_bike_sales_dashboard.png"
+                  src={getAssetPath('/images/london_bike_sales_dashboard.png')}
                   alt="London Bikes Analysis"
                   width={400}
                   height={225}
@@ -779,7 +788,7 @@ export default function Home() {
             <a href="https://github.com/omoke664/Data_Science-Analysis-Projects/tree/main/Psychology_Analysis" target="_blank" rel="noopener noreferrer" className="group bg-white rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
               <div className="aspect-video bg-gray-100 relative">
                 <Image
-                  src="/images/psychology.jpeg"
+                  src={getAssetPath('/images/psychology.jpeg')}
                   alt="Psychology Analysis"
                   width={400}
                   height={225}
@@ -799,7 +808,7 @@ export default function Home() {
             <a href="https://github.com/omoke664/Bike-Store-Analysis-SQL-" target="_blank" rel="noopener noreferrer" className="group bg-white rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
               <div className="aspect-video bg-gray-100 relative">
                 <Image
-                  src="/images/bike_sales_sql.jpeg"
+                  src={getAssetPath('/images/bike_sales_sql.jpeg')}
                   alt="Bike Store Analysis SQL"
                   width={400}
                   height={225}
@@ -820,7 +829,7 @@ export default function Home() {
             <a href="https://github.com/omoke664/Danny-s-Diner-SQL-Case-Study" target="_blank" rel="noopener noreferrer" className="group bg-white rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
               <div className="aspect-video bg-gray-100 relative">
                 <Image
-                  src="/images/danys_diner.png"
+                  src={getAssetPath('/images/danys_diner.png')}
                   alt="Danny's Diner Case Study"
                   width={400}
                   height={225}
@@ -841,7 +850,7 @@ export default function Home() {
             <a href="https://github.com/omoke664/British_Airways_Review_Tableau_Visualization" target="_blank" rel="noopener noreferrer" className="group bg-white rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
               <div className="aspect-video bg-gray-100 relative">
                 <Image
-                  src="/images/BritishAirways.jpeg"
+                  src={getAssetPath('/images/BritishAirways.jpeg')}
                   alt="British Airways Analysis"
                   width={400}
                   height={225}
@@ -862,7 +871,7 @@ export default function Home() {
             <a href="https://github.com/omoke664/Linear-Regression-W-Python-E-commerce-Dataset" target="_blank" rel="noopener noreferrer" className="group bg-white rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
               <div className="aspect-video bg-gray-100 relative">
                 <Image
-                  src="/images/E-commeece.jpeg"
+                  src={getAssetPath('/images/E-commeece.jpeg')}
                   alt="E-commerce Analysis"
                   width={400}
                   height={225}
@@ -885,7 +894,7 @@ export default function Home() {
       {/* Contact Section */}
       <section id="contact" className="section-light py-20 relative overflow-hidden scroll-mt-16">
         <div className="absolute inset-0 bg-gradient-to-br from-[#E8F5E9] via-white to-[#F1F8E9] opacity-50"></div>
-        <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10"></div>
+        <div className="absolute inset-0 bg-[url('${getAssetPath('/grid.svg')}')] opacity-10"></div>
         <div className="max-w-6xl mx-auto px-4 md:px-8 relative z-10">
           <h2 className="text-3xl md:text-4xl font-bold text-[#1B1B1B] mb-12 text-center">
             Get in Touch
@@ -895,7 +904,7 @@ export default function Home() {
             {/* Email */}
             <a href="mailto:omokeleywes@gmail.com" className="bg-white rounded-lg shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 p-2 flex justify-center items-center">
               <Image
-                src="/svg/gmail-svgrepo-com.svg"
+                src={getAssetPath('/svg/gmail-svgrepo-com.svg')}
                 alt="Email"
                 width={24}
                 height={24}
@@ -905,7 +914,7 @@ export default function Home() {
             {/* LinkedIn */}
             <a href="https://www.linkedin.com/in/wesley-omoke-271954231/" target="_blank" rel="noopener noreferrer" className="bg-white rounded-lg shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 p-2 flex justify-center items-center">
               <Image
-                src="/svg/linkedin-icon-svgrepo-com.svg"
+                src={getAssetPath('/svg/linkedin-icon-svgrepo-com.svg')}
                 alt="LinkedIn"
                 width={24}
                 height={24}
@@ -915,7 +924,7 @@ export default function Home() {
             {/* GitHub */}
             <a href="https://github.com/omoke664" target="_blank" rel="noopener noreferrer" className="bg-white rounded-lg shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 p-2 flex justify-center items-center">
               <Image
-                src="/svg/github-142-svgrepo-com.svg"
+                src={getAssetPath('/svg/github-142-svgrepo-com.svg')}
                 alt="GitHub"
                 width={24}
                 height={24}
@@ -925,7 +934,7 @@ export default function Home() {
             {/* WhatsApp */}
             <a href="https://wa.me/254797340467" target="_blank" rel="noopener noreferrer" className="bg-white rounded-lg shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 p-2 flex justify-center items-center">
               <Image
-                src="/svg/whatsapp-svgrepo-com.svg"
+                src={getAssetPath('/svg/whatsapp-svgrepo-com.svg')}
                 alt="WhatsApp"
                 width={24}
                 height={24}
@@ -935,7 +944,7 @@ export default function Home() {
             {/* Credly */}
             <a href="https://www.credly.com/users/wesley-omoke.ccffc8e6" target="_blank" rel="noopener noreferrer" className="bg-white rounded-lg shadow-sm border border-[#E8F5E9] hover:shadow-xl hover:border-[#4CAF50] transition-all duration-300 p-2 flex justify-center items-center">
               <Image
-                src="/svg/credly-svgrepo-com.svg"
+                src={getAssetPath('/svg/credly-svgrepo-com.svg')}
                 alt="Credly"
                 width={24}
                 height={24}

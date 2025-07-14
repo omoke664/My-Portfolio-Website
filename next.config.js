@@ -10,6 +10,9 @@ const nextConfig = {
     basePath: '/My-Portfolio-Website',
     assetPrefix: '/My-Portfolio-Website/',
   }),
+  env: {
+    NEXT_PUBLIC_BASE_PATH: isGithubPages ? '/My-Portfolio-Website' : '',
+  },
 };
 
 module.exports = nextConfig 
