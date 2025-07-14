@@ -1,14 +1,14 @@
 /** @type {import('next').NextConfig} */
-const isProd = process.env.NODE_ENV === 'production';
+const isGithubPages = process.env.GITHUB_PAGES === 'true';
 
 const nextConfig = {
   output: 'export',  // Enable static exports
   images: {
     unoptimized: true,  // Required for static export
   },
-  ...(isProd && {
+  ...(isGithubPages && {
     basePath: '/My-Portfolio-Website',
-    assetPrefix: '/My-Portfolio-Website',
+    assetPrefix: '/My-Portfolio-Website/',
   }),
 };
 
