@@ -159,7 +159,7 @@ export default function Home() {
                 <div className="bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-lg transition-all duration-300">
                   <h3 className="text-2xl font-semibold text-[#4CAF50] mb-4">My Journey</h3>
                   <p className="text-[#666666] leading-relaxed">
-                    My journey into data analysis began unexpectedly during my first role as a loan officer. There, I regularly analyzed clients&apos; credit scores, seeing firsthand how raw data could be transformed into powerful insights that directly informed critical financial decisions. Witnessing this real-world impact ignited a passion within me; I knew then that data analytics was the path I was meant to follow.
+                    My journey into data analysis began unexpectedly during my first role as a loan officer. There, I regularly analyzed clients&#39; credit scores, seeing firsthand how raw data could be transformed into powerful insights that directly informed critical financial decisions. Witnessing this real-world impact ignited a passion within me; I knew then that data analytics was the path I was meant to follow.
                   </p>
                 </div>
                 <div className="bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-[#E8F5E9] hover:shadow-lg transition-all duration-300">
@@ -425,7 +425,7 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="text-[#666666]">
-                      <p>Bachelor&apos;s Degree in Computer Technology</p>
+                      <p>Bachelor&#39;s Degree in Computer Technology</p>
                     </div>
                   </div>
                 </div>
