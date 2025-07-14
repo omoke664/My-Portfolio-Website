@@ -708,7 +708,7 @@ export default function Home() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">Superstore Analysis</h3>
-                <p className="text-[#666666] mb-4">This project provides a comprehensive analysis of the Superstore's sales data using Microsoft Excel. The goal is to uncover insights into sales performance, profitability, and customer behavior across various dimensions.</p>
+                <p className="text-[#666666] mb-4">This project provides a comprehensive analysis of the Superstore&#39;s sales data using Microsoft Excel. The goal is to uncover insights into sales performance, profitability, and customer behavior across various dimensions.</p>
                 <div className="flex flex-wrap gap-4 justify-center">
                   <span className="px-3 py-1 bg-[#4CAF50]/10 text-[#4CAF50] rounded-full text-sm">Excel</span>
                   <span className="px-3 py-1 bg-[#4CAF50]/10 text-[#4CAF50] rounded-full text-sm">Sales Analysis</span>
