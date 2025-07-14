@@ -748,7 +748,7 @@ export default function Home() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-[#1B1B1B] mb-2">India Staff Data Analysis</h3>
-                <p className="text-[#666666] mb-4">This project performs an in-depth analysis of a staff dataset from a company in India. The primary goal is to derive insights into the company's workforce by examining key metrics related to demographics, compensation, and performance. The analysis is presented through two interactive dashboards: one for a company-wide overview and another for detailed departmental analysis.</p>
+                <p className="text-[#666666] mb-4">This project performs an in-depth analysis of a staff dataset from a company in India. The primary goal is to derive insights into the company&#39;s workforce by examining key metrics related to demographics, compensation, and performance. The analysis is presented through two interactive dashboards: one for a company-wide overview and another for detailed departmental analysis.</p>
                 <div className="flex flex-wrap gap-4 justify-center">
                   <span className="px-3 py-1 bg-[#4CAF50]/10 text-[#4CAF50] rounded-full text-sm">Excel</span>
                   <span className="px-3 py-1 bg-[#4CAF50]/10 text-[#4CAF50] rounded-full text-sm">Dashboard</span>
